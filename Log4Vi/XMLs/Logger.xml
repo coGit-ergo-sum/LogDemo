@@ -1,0 +1,21 @@
+﻿<Docs>
+  <type name="Logger">
+    <summary>
+      <img src="/Logger/Images/Logger.png"  style="margin: 15px 0px 15px 0px;" />
+      <p style="Padding: 15px 0px 0px 0px;">
+        Vi.Logger is a static class that accepts, with the method 'Vi.Logger.SetLogger' any kind of object that inherits from Vi.ILog.
+        That means that the implementation of the logging process (on file system; event viewer; DB; ...) can be choosen and changed in any moment.<br/>
+        Shoud be used to have one "company's standard" to log messages with an "embedded" structure (the standard is up to the user). And should be provided to the Vi.Logger, by the method 'Vi.Logger.SetLogger' (shouldn't be used by the developer).
+      </p>
+    
+    </summary>
+  </type>
+  <method name="Info">
+    <summary>
+      <p style="Padding: 15px 0px 0px 0px;">
+        Use this method to log the messages used to monitor the apllication in production.
+      </p>      
+    </summary>
+  </method>
+</Docs>
+

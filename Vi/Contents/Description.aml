@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="3c9c09ed-7f8e-4b02-84e8-bd7948586fcb" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <introduction>
+
+      <para>
+        <legacyBold>LogDemo</legacyBold>: The aim of this project is to show some simple solution to the problem of logging messages.
+        <!-- application developed to show how to log messages with the static methods defined in 'Vi.Logger': <legacyBold>Debug; Info; Warn; Error; Fatal</legacyBold>. -->
+      </para>
+      <!--list class="bullet">
+		  <listItem><para>Debug</para></listItem>
+		  <listItem><para>Info</para></listItem>
+		  <listItem><para>Warn</para></listItem>
+		  <listItem><para>Error</para></listItem>
+		  <listItem><para>Fatal</para></listItem>
+		</list-->
+
+
+      <mediaLink>
+        <caption placement="after" lead="Figure 1">Layout of the running application.</caption>
+        <image placement="center" xlink:href="LogDemo"/>
+      </mediaLink>
+
+
+
+      <para>
+        At the foundation of the project there are:
+      </para>
+      <mediaLink>
+        <caption placement="after" lead="Figure 2"></caption>
+        <image placement="center" xlink:href="LoogerILog"/>
+      </mediaLink>
+
+
+
+
+      <!--list class="bullet">
+          <listItem>
+            <para>The static class Vi.Logger. (see T:Vi.Logger)</para>
+          </listItem>
+          <listItem>
+            <para>The Interface ILog. (see T:Vi.ILog)</para>
+          </listItem>
+        </list-->
+      <section address="ViLogger">
+        <title>Vi.Logger</title>
+        <content>  
+
+    
+        <example>
+        <!--para>
+          the method 'SetLogger' is very important in the class 'Vi.Logger':
+        </para-->
+        <code source="C:\Vi\Code\CSharp\Vi\Logger\Class.Logger.cs" region="SetLogger" language="C#" title="The method 'Vi.Logger'" removeRegionMarkers="false" numberLines="true" keepSeeTags="true"  />
+      </example>  
+
+          <para>
+            The staring point is the class 'Vi.Logger' that exposes the classic methods to log messages: <legacyBold>Debug; Info; Warn; Error; Fatal</legacyBold>, but none of these writes any message,
+            The responsability of this class is to provide a fully featured architecture with:
+            <!-- 
+      	(overloads; intellisen). care about all the staff ar log starts only after a 'logger' is provided by the method 'SetLogger' and where to log (file system, Console, ListView, DB, ...) depend on the particular logger provided.
+        The options in this demo are:-->
+          </para>
+          <list class="bullet">
+            <listItem>
+              <para>
+                <legacyBold>overloads</legacyBold>: all the methods have different signature with diferent set of parameters to choose from. There is also an 'embedded' Format method (like the String.Format). for example <legacyItalic>Vi.Logger.Info().Format("Hello {0}", "Word")</legacyItalic>
+              </para>
+            </listItem>
+            <listItem>
+              <para>
+                <legacyBold>CompilerServices</legacyBold>: all the mothods can trak info about the caller: <legacyBold>file name</legacyBold>; <legacyBold>member name</legacyBold>; <legacyBold>line number</legacyBold> (<legacyItalic>In my experience this feature has proven to be VERY usefull, if not the most usefull.</legacyItalic>)
+              </para>
+            </listItem>
+            <listItem>
+              <para>
+                <legacyBold>Abstraction</legacyBold>: as said this class does not implement any 'log stategy'. This is the responsabilty of the object provided, as parameter, by the method 'SetLogger'. (<legacyItalic>this makes the class easy to use and easy to change the way log are stored</legacyItalic>.)
+              </para>
+            </listItem>
+            <listItem>
+              <para>
+                <legacyBold>Documentation</legacyBold>: all methods are fully documented with summaries and help file. In that way <legacyBold>intellisense</legacyBold> and <legacyBold>Help</legacyBold> are enabled. This allows the use of the dll (instead of the code) which improves the <legacyBold>standardization</legacyBold>.
+              </para>
+            </listItem>
+            <listItem>
+              <para>
+                <legacyBold>public static</legacyBold>: all the log methods are public static, then 'global' (to the solution) and 'ready to use'.
+              </para>
+            </listItem>
+          </list>
+          <para>
+            Last but not least caracteristic is that, this 'architecture', wrapping the object provided as parameter, by the method 'SetLogger', makes not necessary 'to adorn' the latter with all the infrastructure that required by professional code. In other words, the object provided to the method 'SetLogger' is made to be used by the code (the Vi.logger' class) and not by the developers, so no any infrastructure is needed . To provide a good enough structure, isn't a challenging task but it is time-consuming. (<legacyItalic>For example the class 'Vi.Logger' despite its simplicity takes more than 400 lines of code.</legacyItalic>)
+          </para>
+          
+        
+        </content>
+      </section>
+
+
+
+      <section address="ViLogger">
+        <title>Vi.ILog</title>
+        <content>
+          <para>
+            The only constraint for the object provided, as parameter, to the method 'Vi.Logger.SetLogger is that it must inherit from 'Vi.Ilog'. This is a way to implement the "dependency injection".
+
+          </para>
+        </content>
+      </section>
+
+
+
+      <section address="Vi.List4Log">
+        <title>Vi.List4Log</title>
+        <content>
+          <para>
+            This class implements the user control used to show messages with a listView control.
+          </para>
+        </content>
+      </section>
+
+
+
+
+
+
+
+    </introduction>
+
+    <section address="CodeExamples">
+      <title>Code examples (excerpt from Form1)</title>
+      <content>
+        <para>
+          The following code examples demonstarte how to use the Vi.Logger
+        </para>
+        <example>
+          <code source="C:\Vi\Code\CSharp\LogDemo\LogDemo\Form1.cs" region="Initialization" language="C#" title="Initialization." removeRegionMarkers="false" numberLines="true" keepSeeTags="true"  />
+        </example>
+
+        <example>
+          <code source="C:\Vi\Code\CSharp\LogDemo\LogDemo\Form1.cs" region="SetLogger" language="C#" title="How to set the preferred logger." removeRegionMarkers="false" numberLines="true" keepSeeTags="true"  />
+        </example>
+
+        <example>
+          <code source="C:\Vi\Code\CSharp\LogDemo\LogDemo\Form1.cs" region="ShowFiles" language="C#" title="Show log files." removeRegionMarkers="false" numberLines="true" keepSeeTags="true"  />
+        </example>
+      </content>
+    </section>
+
+
+
+
+
+    <section address="TheAdvantages">
+      <title>The advantage this solution brings</title>
+      <content>
+
+
+        <list class="bullet">
+          <listItem>
+            <para>
+              <legacyBold>Removes the dependency on the specific logging tool adopted</legacyBold>: It is not necessary to know how the log is performed. The way logs are 'written' can change at any time (file system; event viewer; DB; ListView; Console; ...) .
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>Sets a standard for the company</legacyBold>: It is common experience that every developer has its own "style" when writes logs. This shouldn't happen (especially in a well structured company.)
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>Simplicity</legacyBold>: Log4Net is a very powerful tool: just 'plug and forget'. Its drawback is the 'configuration' (by my experience make it run is a nightmare.) This class removes this problem.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Easy to switch: The <legacyBold>switch between the "destinations"</legacyBold> (file system, Console, event log, DB, ... ) is very easy
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+
+
+  </developerConceptualDocument>
+</topic>

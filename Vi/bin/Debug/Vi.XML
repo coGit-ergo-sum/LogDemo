@@ -1,0 +1,785 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Vi</name>
+    </assembly>
+    <members>
+        <member name="T:Vi.Logger">
+            <summary>
+            Exposes  methods  to log and format messages: Debug; Info; Warn; Error; Fatal; Format.    
+            </summary>    
+            <summary>
+      <img src="\Logger\Images\Logger.png" style="margin: 15px 0px 15px 0px;" />
+<!-- 
+<br /> This latter is the object that truly logs the message. 
+The responsibility of This goal is achieved by a rich set of overloads; a detailed intellisense. 
+makes this class '<b>polymorphic</b>' (using an old-style expression) or 
+
+This goal is achieved by a rich set of overloads; a detailed intellisense.
+-->
+      <p style="Padding: 15px 0px 0px 0px;line-height: 150%;">
+        This class is a '<b>presentation layer</b>' wrapped arount the object (an instace of the class Vi.Log4Vi.Logger) provided by the method <b>SetLogger</b>. 
+        Vi.Logger (this class) exhibits an enhanced set of the classic log methods to improve, as much as possible, the user experience (the developer in this case).        
+      </p>
+
+      <p style="Padding: 15px 0px 0px 0px;line-height: 150%;">
+        The responsibility to 'write' the log belongs to the object supplied to this class by the method SetLogger and it is obvious that how the log is implemented doesn't matter to this class.<br />
+
+        This 'architecture'. is a way to implement a '<b>dependency injection</b>' and 'abstracts' toward the log process, giving:
+        <ul>
+          <li>
+            the freedom to <b>choose and change</b> in any moment the implementation of the logging process between: file system; event viewer; Console, DB; ... . <br />
+          </li>
+          <li>
+            a 'global', static and <b>easy to use</b> method to log messages.
+          </li>
+        </ul>
+        
+        <span style="font-style: italic;font-size: 90%">
+          For example, during the development of a class library it is normal, for the developer, write also a very simple GUI (to interact and test the class library).
+          The hassle is that (normally) the class library 'writes' to the Console. Instead, working with a GUI is easier to have the message directly on the window form.
+          with this class <b>the switch takes just one line of code</b>, and affects not only the GUI but also the class library (Thus, since the class library is hosted within the GUI, it writes to the 'screen'. When the host change, change also the destination for the log.).
+        </span>
+      </p>
+
+
+      <p style="Padding: 15px 0px 0px 0px;line-height: 150%;">
+        The advantages, this solution brings, are:
+        <ol>
+          <li>
+            <b>Sets a standard for the company</b>: It is common experience that every developer has its own "style" when writes logs. This shouldn't happen (especially in a well structured company.)
+          </li>
+          <li>
+            <b>Removes the dependency on the specific logging tool</b> adopted: the developer doesn't need to know, how the log is performed. The way logs are 'written' can change at any time (file system; event viewer; DB; screen; ...) .
+          </li>
+          <li>
+            <b>Simplicity</b>: Log4Net is a very powerful tool: just 'plug &amp; forget'. Its drawback is the 'configuration' (by my experience make it run is a nightmare.) This class removes this problem. 
+          </li>
+        </ol>
+      </p>
+
+      
+    </summary>
+        </member>
+        <member name="T:Vi.Logger.Levels">
+            <summary>
+            Enumeration of the possible types of log (method)
+            </summary>
+        </member>
+        <member name="F:Vi.Logger.Levels.DEBUG">
+            <summary>
+            This is the most verbose logging level (maximum volume setting). Debug should be out-of-bounds for a production system and used only for development and testing.
+            </summary>
+        </member>
+        <member name="F:Vi.Logger.Levels.INFO">
+            <summary>
+            The 'Info' level is typically used to output information that is useful to the running and management of your system (production). 'Info' would also be the level used to log Entry and Exit points in key areas of your application. However, you may choose to add more entry and exit points at Debug level for more granularity during development and testing.
+            </summary>
+        </member>
+        <member name="F:Vi.Logger.Levels.WARN">
+            <summary>
+            Warning is often used for handled 'exceptions' or other important log events. For example, if your application requires a configuration setting but has a default in case the setting is missing, then the Warning level should be used to log the missing configuration setting.
+            </summary>
+        </member>
+        <member name="F:Vi.Logger.Levels.ERROR">
+            <summary>
+            Error is used to log all unhandled exceptions. This is typically logged inside a catch block at the boundary of your application.
+            </summary>
+        </member>
+        <member name="F:Vi.Logger.Levels.FATAL">
+            <summary>
+            Fatal is reserved for special exceptions/conditions where it is imperative that you can quickly pick out these events. Fatal should to be used early in an application's development. It's usually only with experience it is possible identify situations worthy of the FATAL moniker experience do specific events become worth of promotion to Fatal. After all, an error's an error.
+            </summary>
+        </member>
+        <member name="T:Vi.Logger.FakeLog">
+            <summary>
+            This is an "empty" class: all the methods are without implementation. 
+            </summary>
+            <summary>
+      <img src="\Logger\Images\Vi.FakeLog.png" style="margin: 15px 0px 15px 0px;" />
+      <p style="Padding: 15px 0px 0px 0px;">
+         As soon the method 'SetLogger' will be called this class will be replaced with the provided Logger (if not null)
+         - The aim with this class is to avoid the check: if(this.Log != nul){...} -
+      </p>      
+    </summary>
+        </member>
+        <member name="M:Vi.Logger.FakeLog.Debug(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            This Method is Without implementation
+            </summary>
+            <param name="text">The text to log.</param>
+            <param name="line">The Line number in the file where this method is called.</param>
+            <param name="member">The name of the member from which the log comes.</param>
+            <param name="file">The name of the file from where this method is called.</param>
+        </member>
+        <member name="M:Vi.Logger.FakeLog.Info(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            This Method is Without implementation
+            </summary>
+            <param name="text">The text to log.</param>
+            <param name="line">The Line number in the file where this method is called.</param>
+            <param name="member">The name of the member from which the log comes.</param>
+            <param name="file">The name of the file from where this method is called.</param>
+        </member>
+        <member name="M:Vi.Logger.FakeLog.Warn(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            This Method is Without implementation
+            </summary>
+            <param name="text">The text to log.</param>
+            <param name="line">The Line number in the file where this method is called.</param>
+            <param name="member">The name of the member from which the log comes.</param>
+            <param name="file">The name of the file from where this method is called.</param>
+        </member>
+        <member name="M:Vi.Logger.FakeLog.Error(System.Exception,System.Int32,System.String,System.String)">
+            <summary>
+            This Method is Without implementation
+            </summary>
+            <param name="se">The exception to log.</param>
+            <param name="line">The Line number in the file where this method is called.</param>
+            <param name="member">The name of the member from which the log comes.</param>
+            <param name="file">The name of the file from where this method is called.</param>
+        </member>
+        <member name="M:Vi.Logger.FakeLog.Fatal(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            This Method is Without implementation
+            </summary>
+            <param name="text">The text to log.</param>
+            <param name="line">The Line number in the file where this method is called.</param>
+            <param name="member">The name of the member from which the log comes.</param>
+            <param name="file">The name of the file from where this method is called.</param>
+        </member>
+        <member name="T:Vi.Logger.FormatDelegate">
+            <summary>
+            Defined only for the class 'FormatClass'
+            </summary>
+            <param name="text">The text to log.</param>
+            <param name="line">The Line number in the file where this method is called.</param>
+            <param name="member">The name of the member from which the log comes.</param>
+            <param name="file">The name of the file from where this method is called.</param>
+        </member>
+        <member name="T:Vi.Logger.FormatClass">
+            <summary>
+            This class is a 'trick' necessary because is not possible have optional parameter (file, member and line) and a param array. this are necessary for the 'Format' method.
+            </summary>
+            <summary>
+      <img src="\Logger\Images\Vi.FormatClass.png" style="margin: 15px 0px 15px 0px;" />
+      <p style="Padding: 15px 0px 0px 0px;">
+        C# doesn't allows optional parameters and params array in the same Method. This class is created to bypass this constraint.
+      </p>      
+    </summary>
+        </member>
+        <member name="F:Vi.Logger.FormatClass.CallBack">
+            <summary>
+            The callback used to log the message.
+            </summary>
+        </member>
+        <member name="P:Vi.Logger.FormatClass.File">
+            <summary>
+            The name of the file from where this method is called.
+            </summary>
+        </member>
+        <member name="P:Vi.Logger.FormatClass.Member">
+            <summary>
+            The name of the member where this method is called.
+            </summary>
+        </member>
+        <member name="P:Vi.Logger.FormatClass.Line">
+            <summary>
+            The Line of the file where this method is called.
+            </summary>
+        </member>
+        <member name="M:Vi.Logger.FormatClass.#ctor(Vi.Logger.FormatDelegate,System.Int32,System.String,System.String)">
+            <summary>
+            CTor. Assign the parameter to the inner fields.
+            </summary>
+            <param name="callBack">The callback function used to log one of {Debug; Info; Warn; Fatal}</param>
+            <param name="file">The name of the file from where this method is called.</param>
+            <param name="member">The name of the member where this method is called.</param>
+            <param name="line">The Line of the file where this method is called.</param>
+        </member>
+        <member name="M:Vi.Logger.FormatClass.Format(System.String,System.Object[])">
+            <summary>
+            Logs the message formatting the text exactly as 'String.Format'.
+            </summary>
+            <param name="format">A composite format string.</param>
+            <param name="args">An object array that contains zero or more objects to format.</param>
+        </member>
+        <member name="F:Vi.Logger.SkipDebug">
+            <summary>
+            If true 'Debug' will not be traced.
+            </summary>
+        </member>
+        <member name="F:Vi.Logger._Logger">
+            <summary>
+            The object effectively used to execute the log. By default is a 'Fake' log (an empty class that does not writes anything). To assigne a true Log object use the method 'SetLogger'. 
+            It is not public to avoid misuse like: Logger._Logger.Debug(...).
+            </summary>
+        </member>
+        <member name="M:Vi.Logger.SetLogger(Vi.ILog)">
+            <summary>
+            Assign the provided logger to this class (Vi.Logger). By default this class uses a 'fake' logger that does logs nothing.
+            After this assignment, every log will be managed by the provided class. This class in made with Log4Net in mind, but any other way to log can used.
+            </summary>
+            <param name="logger">Any kind of logger that inherits from 'Vi.Shared.ILog'.</param>
+        </member>
+        <member name="M:Vi.Logger.GetLogger">
+            <summary>
+            Gives back the 'Logger' currently used. This method is defined to avoid direct access to this 'logger'
+            </summary>
+            <returns>The Logger object currently used.</returns>
+        </member>
+        <member name="M:Vi.Logger.Write(System.String,Vi.Logger.Levels,System.Int32,System.String,System.String)">
+            <summary>
+            Writes one of the log method based on level.
+            </summary>
+            <param name="text">The text to log.</param>
+            <param name="level">Specifies which kind of log {Debug; Warn; ...}</param>
+            <param name="line">The Line number in the file where this method is called.</param>
+            <param name="member">The name of the member from which the log comes.</param>
+            <param name="file">The name of the file from where this method is called.</param>
+        </member>
+        <member name="M:Vi.Logger.Write(Vi.Logger.Levels,System.Int32,System.String,System.String)">
+            <summary>
+            Writes one of the log method based on level.
+            </summary>
+            <param name="level">Specifies which kind of log {Debug; Warn; ...}</param>
+            <param name="line">The Line number in the file where this method is called.</param>
+            <param name="member">The name of the member from which the log comes.</param>
+            <param name="file">The name of the file from where this method is called.</param>
+            <returns>An instance of 'FormatClass' with the method 'Format' used to compose the text to log like the 'String.Format'</returns>
+        </member>
+        <member name="M:Vi.Logger.Write(System.Exception,System.Int32,System.String,System.String)">
+            <summary>
+            The same as Error(). (defined only for consinstency.)
+            </summary>
+            <param name="se">The exception to log.</param>
+            <param name="line">The Line number in the file where this method is called.</param>
+            <param name="member">The name of the member from which the log comes.</param>
+            <param name="file">The name of the file from where this method is called.</param>
+        </member>
+        <member name="M:Vi.Logger.Debug(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            This is the most verbose logging level (maximum volume setting). Debug should be out-of-bounds for a production system and used only for development and testing.
+            Logs a 'Debug in the log file if skepDebug (in config file) is false.
+            </summary>
+            <param name="text">The text to log.</param>
+            <param name="file">The name of the file from where this method is called.</param>
+            <param name="member">The name of the member where this method is called.</param>
+            <param name="line">The Line of the file where this method is called.</param>
+        </member>
+        <member name="M:Vi.Logger.Debug(System.Int32,System.String,System.String)">
+            <summary>
+            Call this method to reach the Format method 'Debug().Format(...)';
+            </summary>
+            <param name="file">The name of the file from where this method is called.</param>
+            <param name="member">The name of the member where this method is called.</param>
+            <param name="line">The Line of the file where this method is called.</param>
+            <returns>An instance of 'FormatClass' with the method 'Format' used to compose the text to log like the 'String.Format'</returns>
+        </member>
+        <member name="M:Vi.Logger.Info(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            The 'Info' level is typically used to output information that is useful to the running and management of your system (production). 'Info' would also be the level used to log Entry and Exit points in key areas of your application. However, you may choose to add more entry and exit points at Debug level for more granularity during development and testing.
+            </summary>
+            <param name="text">The text to log.</param>
+            <param name="file">The name of the file from where this method is called.</param>
+            <param name="member">The name of the member where this method is called.</param>
+            <param name="line">The Line of the file where this method is called.</param>
+            <summary>
+      <p style="Padding: 15px 0px 0px 0px;">
+        Use this method to log the messages used to monitor the apllication in production.
+      </p>      
+    </summary>
+        </member>
+        <member name="M:Vi.Logger.Info(System.Int32,System.String,System.String)">
+            <summary>
+            Use this overload to 'Format' a message like the method 'System.String.Format'. The sintax is: Info().Format(string format, params object[] args).
+            </summary>
+            <param name="line">The Line of the file where this method is called.</param>
+            <param name="member">Used for debug pourposes: the name of the member from which the log comes.</param>
+            <param name="file">The name of the file from where this method is called.</param>
+            <returns>An instance of 'FormatClass' with the method 'Format' used to compose the text to log like the 'String.Format'</returns>
+        </member>
+        <member name="M:Vi.Logger.Warn(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            Warning is often used for handled 'exceptions' or other important log events. For example, if your application requires a configuration setting but has a default in case the setting is missing, then the Warning level should be used to log the missing configuration setting.
+            </summary>
+            <param name="text">The text to log.</param>
+            <param name="file">The name of the file from where this method is called.</param>
+            <param name="member">The name of the member where this method is called.</param>
+            <param name="line">The Line of the file where this method is called.</param>
+        </member>
+        <member name="M:Vi.Logger.Warn(System.Int32,System.String,System.String)">
+            <summary>
+            Warning is often used for handled 'exceptions' or other important log events. For example, if your application requires a configuration setting but has a default in case the setting is missing, then the Warning level should be used to log the missing configuration setting.
+            </summary>
+            <param name="file">The name of the file from where this method is called.</param>
+            <param name="member">The name of the member where this method is called.</param>
+            <param name="line">The Line of the file where this method is called.</param>
+            <returns>An instance of 'FormatClass' with the method 'Format' used to compose the text to log like the 'String.Format'</returns>
+        </member>
+        <member name="M:Vi.Logger.Error(System.Exception,System.Int32,System.String,System.String)">
+            <summary>
+            Error is used to log all unhandled exceptions. This is typically logged inside a catch block at the boundary of your application.
+            </summary>
+            <param name="se">The exception to log.</param>
+            <param name="line">The line from where this method was called.</param>
+            <param name="member">The member from where this method was called.</param>
+            <param name="file">The file from where this method was called.</param>
+        </member>
+        <member name="M:Vi.Logger.Fatal(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            Fatal is reserved for special exceptions/conditions where it is imperative that you can quickly pick out these events. Fatal should to be used early in an application's development. It's usually only with experience it is possible identify situations worthy of the FATAL moniker experience do specific events become worth of promotion to Fatal. After all, an error's an error.
+            </summary>
+            <param name="text">The text to log.</param>
+            <param name="file">The name of the file from where this method is called.</param>
+            <param name="member">The name of the member where this method is called.</param>
+            <param name="line">The Line of the file where this method is called.</param>
+        </member>
+        <member name="M:Vi.Logger.Fatal(System.Int32,System.String,System.String)">
+            <summary>
+            Fatal is reserved for special exceptions/conditions where it is imperative that you can quickly pick out these events. Fatal should to be used early in an application's development. It's usually only with experience it is possible identify situations worthy of the FATAL moniker experience do specific events become worth of promotion to Fatal. After all, an error's an error.
+            </summary>
+            <param name="file">The name of the file from where this method is called.</param>
+            <param name="member">The name of the member where this method is called.</param>
+            <param name="line">The Line of the file where this method is called.</param>
+            <returns>An instance of 'FormatClass' with the method 'Format' used to compose the text to log like the 'String.Format'</returns>
+        </member>
+        <member name="T:Vi.Console4Log">
+            <summary>
+            Sends the message to the console window
+            </summary>
+             <summary>
+      <img src="\Logger\Images\Console.png" style="margin: 15px 0px 15px 0px;" />
+      <p style="Padding: 15px 0px 0px 0px;">
+        As shown by the picture each method, between Debug; Info; Warn; Error; Fatal, has its own code color.
+      </p>
+    
+    </summary>
+        </member>
+        <member name="M:Vi.Console4Log.SetLogger(Vi.ILog)">
+            <summary>
+            Wraps the provided logger with the class 'Wrapper' 
+            After this assignment, this object will intercept and send on the screen every message sent to the file.
+            </summary>
+            <param name="logger">Any kind of 'logger' that inherits from 'Vi.Shared.ILog'.</param>
+        </member>
+        <member name="M:Vi.Console4Log.Write(System.String,System.Int32,System.String,System.String,Vi.Logger.Levels)">
+            <summary>
+            Writes the message on the Console.
+            </summary>
+            <param name="text">The text to log.</param>
+            <param name="file">The name of the file from where this method is called.</param>
+            <param name="member">The name of the member where this method is called.</param>
+            <param name="line">The Line of the file where this method is called.</param>
+            <param name="level">Specifies which kind of log {Debug; Warn; ...}</param>
+            <summary>
+      <para>
+        <p style="padding:9px 0px 7px 0px;">
+          Each log has its own style depending on 'Level'. The image below shows examples of entries for each  level
+        </p>
+      </para>
+      <img src="\Logger\Images\List4Log.example.JPG" style="margin: 15px 0px 15px 0px;" />    
+    </summary>
+            <summary>
+      <para>
+        <p style="padding:9px 0px 7px 0px;">
+          This is the <b>public method</b>. It manages the cross thread operation. and then calls the internal overload.
+        </p>
+      </para> 
+    </summary>
+        </member>
+        <member name="T:Vi.ILog">
+            <summary>
+            The base interface that every class must inherit from, to be used with the Vi.Log4Vi.Logger. 
+            </summary>
+            <summary>
+      <img src="\Logger\Images\ILog.png" style="margin: 15px 0px 15px 0px;" />
+      <p style="Padding: 15px 0px 0px 0px;">
+        This Interface is defined to implement the <b>"dependency injection"</b> in this project, by the method 'Vi.Logger.SetLogger'.<br />
+        Every class used to log messages (regardles the implementation), to be used by this Logger, must inherit from the Vi.ILog interface.
+      </p>
+      
+    </summary>
+        </member>
+        <member name="M:Vi.ILog.Debug(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            This is the most verbose logging level (maximum volume setting). Debug should be out-of-bounds for a production system and used only for development and testing.
+            </summary>
+            <param name="text">The text to log.</param>
+            <param name="line">The line from where this method was called.</param>
+            <param name="member">The member from where this method was called.</param>
+            <param name="file">The file from where this method was called.</param>
+            <summary>
+        <para>
+          <p style="padding:9px 0px 7px 0px;" />
+        </para>
+
+      </summary>
+        </member>
+        <member name="M:Vi.ILog.Fatal(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            Fatal is reserved for special exceptions/conditions where it is imperative that you can quickly pick out these events. 
+            </summary>
+            <param name="text">The text to log.</param>
+            <param name="line">The line from where this method was called.</param>
+            <param name="member">The member from where this method was called.</param>
+            <param name="file">The file from where this method was called.</param>
+            <summary>
+      <para>
+        <p style="padding:9px 0px 7px 0px;">
+          Fatal should to be used early in an application's development. It's usually only with experience it is possible identify situations worthy of the FATAL moniker experience do specific events become worth of promotion to Fatal. After all, an error's an error.
+        </p>
+      </para>
+
+    
+  </summary>
+        </member>
+        <member name="M:Vi.ILog.Info(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            The 'Info' level is typically used to output information that is useful to the running and management of your system (production). 
+            </summary>
+            <param name="text">The text to log.</param>
+            <param name="line">The line from where this method was called.</param>
+            <param name="member">The member from where this method was called.</param>
+            <param name="file">The file from where this method was called.</param>
+            <summary>
+      <para>
+        <p style="padding:9px 0px 7px 0px;">
+          'Info' would also be the level used to log Entry and Exit points in key areas of your application. However, you may choose to add more entry and exit points at Debug level for more granularity during development and testing.
+        </p>
+      </para>
+
+    </summary>
+        </member>
+        <member name="M:Vi.ILog.Warn(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            Warning is often used for handled 'exceptions' or other important log events.
+            </summary>
+            <param name="text">The text to log.</param>
+            <param name="line">The line from where this method was called.</param>
+            <param name="member">The member from where this method was called.</param>
+            <param name="file">The file from where this method was called.</param>
+            <summary>
+      <para>
+        <p style="padding:9px 0px 7px 0px;">
+          For example, if your application requires a configuration setting but has a default in case the setting is missing, then the Warning level should be used to log the missing configuration setting.
+        </p>
+      </para>
+    
+    </summary>
+        </member>
+        <member name="M:Vi.ILog.Error(System.Exception,System.Int32,System.String,System.String)">
+            <summary>
+            Error is used to log all unhandled exceptions. 
+            </summary>
+            <param name="se">The exception to log.</param>
+            <param name="line">The line from where this method was called.</param>
+            <param name="member">The member from where this method was called.</param>
+            <param name="file">The file from where this method was called.</param>
+            <summary>
+      <para>
+        <p style="padding:9px 0px 7px 0px;">
+          This is typically logged inside a catch block at the boundary of your application.
+        </p>
+      </para>
+      
+  </summary>
+        </member>
+        <member name="T:Vi.List4Log">
+            <summary>
+            Implements a listView, specialized to show logs for Log4Vi (log4Net)
+            </summary>
+            <summary>
+      <img src="\Logger\Images\Vi.List4Log.png" style="margin: 15px 0px 15px 0px;" />
+      <br />
+      This is an example of the control created to visualize, on the screen, the logs by the class Vi.Logs, with some messages.
+      <img src="\Logger\Images\List4Log.example.JPG" style="margin: 15px 0px 15px 0px;" />
+    </summary>
+        </member>
+        <member name="M:Vi.List4Log.Exception(System.Exception)">
+            <summary>
+            Manages the bottom bar used to display every internal exception. (exception in this user control cannot be sent to the list view to avoid a loop, so that kind of exception are addressed to the bottom bar .)
+            </summary>
+            <param name="se">The exception to lon on the bottom bar.</param>
+        </member>
+        <member name="M:Vi.List4Log.Exception">
+            <summary>
+            Nothing to write. Then the bottom bar is hidden.
+            </summary>
+        </member>
+        <member name="M:Vi.List4Log.#ctor">
+            <summary>
+            Main CTor. Initializes Components and the listView (adding the proper columns)
+            </summary>
+        </member>
+        <member name="M:Vi.List4Log.SetLogger(Vi.ILog)">
+            <summary>
+            Wraps the provided logger with the class 'Wrapper' 
+            After this assignment, this object will intercept and send on the screen every message sent to the file.
+            </summary>
+            <param name="logger">Any kind of 'logger' that inherits from 'Vi.Shared.ILog'.</param>
+        </member>
+        <member name="M:Vi.List4Log.GetLogger">
+            <summary>
+            Grant access to the internal ILog logger
+            </summary>
+            <returns>The current logger used to 'write' messages.</returns>
+        </member>
+        <member name="M:Vi.List4Log.AppendItem(System.String,System.Int32,System.String,System.String,Vi.Logger.Levels)">
+            <summary>
+            Adds a message to the list view.
+            </summary>
+            <param name="text">The text to log.</param>
+            <param name="file">The name of the file from where this method is called.</param>
+            <param name="member">The name of the member where this method is called.</param>
+            <param name="line">The Line of the file where this method is called.</param>
+            <param name="level">Specifies which kind of log {Debug; Warn; ...}</param>
+            <summary>
+      <para>
+        <p style="padding:9px 0px 7px 0px;">
+          Each log has its own style depending on 'Level'. The image below shows examples of entries for each  level
+        </p>
+      </para>
+      <img src="\Logger\Images\List4Log.example.JPG" style="margin: 15px 0px 15px 0px;" />    
+    </summary>
+            <summary>
+      <para>
+        <p style="padding:9px 0px 7px 0px;">
+          This is the <b>public method</b>. It manages the cross thread operation. and then calls the internal overload.
+        </p>
+      </para> 
+    </summary>
+        </member>
+        <member name="M:Vi.List4Log.AppendItem(System.String,System.String,System.Int32,System.String,System.String,Vi.Logger.Levels)">
+            <summary>
+            Adds a message to the list view.
+            </summary>
+            <param name="ImageKey">The id of the icon.</param>
+            <param name="text">The text to log.</param>
+            <param name="file">The name of the file from where this method is called.</param>
+            <param name="member">The name of the member where this method is called.</param>
+            <param name="line">The Line of the file where this method is called.</param>
+            <param name="level">Specifies which kind of log {Debug; Warn; ...}</param>
+            <summary>
+      <para>
+        <p style="padding:9px 0px 7px 0px;">
+          Each log has its own style depending on 'Level'. The image below shows examples of entries for each  level
+        </p>
+      </para>
+      <img src="\Logger\Images\List4Log.example.JPG" style="margin: 15px 0px 15px 0px;" />    
+    </summary>
+            <summary>
+      <para>
+        <p style="padding:9px 0px 7px 0px;">
+          This is the <b>private method</b> and implements the adding operation.
+        </p>
+      </para> 
+    </summary>
+        </member>
+        <member name="M:Vi.List4Log.SetListViewHeader">
+            <summary>
+            Initializes the listview's header
+            </summary>
+        </member>
+        <member name="M:Vi.List4Log.SubItemsAdd(System.Windows.Forms.ListViewItem,Vi.Logger.Levels,System.Drawing.Color,System.String,System.String)">
+            <summary>
+            Add a subItem to the provided listItem
+            </summary>
+            <param name="lvi">The new subItem will be added to this listView item.</param>
+            <param name="level">The level of the message (Debug; Info; Warn; ...)</param>
+            <param name="foreColor">The text color based on position and level.</param>
+            <param name="text">The text to show.</param>
+            <param name="name">The name of the 'column'.</param>
+        </member>
+        <member name="M:Vi.List4Log.tsmClear_Click(System.Object,System.EventArgs)">
+            <summary>
+            Clears the listview
+            </summary>
+            <param name="sender">The object from which the event comes.</param>
+            <param name="e">Info from the object</param>
+        </member>
+        <member name="M:Vi.List4Log.tsmCopy_Click(System.Object,System.EventArgs)">
+            <summary>
+            Copy in the clipboard the text of the selected rows.
+            </summary>
+            <param name="sender">The object from which the event comes.</param>
+            <param name="e">Info from the object</param>
+        </member>
+        <member name="F:Vi.List4Log.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Vi.List4Log.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Vi.List4Log.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Vi.List4Log.listView">
+            <summary>
+            The list view used to show log messages
+            </summary>
+        </member>
+        <member name="F:Vi.List4Log.panel">
+            <summary>
+            The container of the bottom bar used to display internal error  messages.
+            </summary>
+        </member>
+        <member name="F:Vi.List4Log.pictureBox">
+            <summary>
+            The image used for the exception.
+            </summary>
+        </member>
+        <member name="F:Vi.List4Log.label">
+            <summary>
+            The container where to show the error message.
+            </summary>
+        </member>
+        <member name="F:Vi.List4Log.imageList">
+            <summary>
+            The container for the images used by the listview.
+            </summary>
+        </member>
+        <member name="F:Vi.List4Log.contextMenuStrip">
+            <summary>
+            The contest (popup) menu.
+            </summary>
+        </member>
+        <member name="F:Vi.List4Log.tsmCopy">
+            <summary>
+            The 'Copy' menu.
+            </summary>
+        </member>
+        <member name="F:Vi.List4Log.tsmClear">
+            <summary>
+            The 'Paste' menu.
+            </summary>
+        </member>
+        <member name="F:Vi.List4Log.toolStripSeparator1">
+            <summary>
+            The separator between the menus
+            </summary>
+        </member>
+        <member name="T:Vi.Wrapper">
+            <summary>
+            This class is a 'wrapper' around the provided 'Logger'. Its task is to 'intercepts' the messages addressed to the log file and send a copy (also) to the screen.
+            </summary>
+            <summary>
+      <img src="\Logger\Images\Vi.Wrapper.png" style="margin: 15px 0px 15px 0px;" />
+      <p style="Padding: 15px 0px 0px 0px;"> 
+        This class 'works' for the user control: ist4Log. Its 'duty' is to 'intercept' every log and send the message to the screen.
+      </p>      
+    </summary>
+        </member>
+        <member name="T:Vi.Wrapper.OnAppendHandler">
+            <summary>
+            The delegate used to define the event 'OnAppend'
+            </summary>
+            <param name="text">The text to log.</param>
+            <param name="line">The Line of the file where this method is called.</param>
+            <param name="member">The name of the member where this method is called.</param>
+            <param name="file">The name of the file from where this method is called.</param>
+            <param name="level">Specifies which kind of log {Debug; Warn; ...}</param>
+        </member>
+        <member name="F:Vi.Wrapper._Logger">
+            <summary>
+            A 'store' for the Logger supplied with the CTor.
+            </summary>
+        </member>
+        <member name="E:Vi.Wrapper.OnAppend">
+            <summary>
+            This event fires everitime a message to the log file is intercepted. Triggers the addition of a new row in the listView.
+            </summary>
+            <summary>
+      <p style="Padding: 15px 0px 0px 0px;">
+      
+      </p>      
+    </summary>
+        </member>
+        <member name="M:Vi.Wrapper.Append(System.String,System.Int32,System.String,System.String,Vi.Logger.Levels)">
+            <summary>
+            Does the proper checs and calls the 'OnAppend' method.
+            </summary>
+            <param name="text">The text to log.</param>
+            <param name="line">The Line of the file where this method is called.</param>
+            <param name="member">The name of the member where this method is called.</param>
+            <param name="file">The name of the file from where this method is called.</param>
+            <param name="level">Specifies which kind of log {Debug; Warn; ...}</param>
+        </member>
+        <member name="M:Vi.Wrapper.#ctor(Vi.ILog)">
+            <summary>
+            The main CTor. Stores the supplied Logger.
+            </summary>
+            <param name="logger">The Logger used to log the messages.</param>
+        </member>
+        <member name="M:Vi.Wrapper.Debug(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            This is the most verbose logging level (maximum volume setting). Debug should be out-of-bounds for a production system and used only for development and testing.
+            Logs a 'Debug in the log file if skepDebug (in config file) is false.
+            </summary>
+            <param name="text">The text to log.</param>
+            <param name="line">The Line of the file where this method is called.</param>
+            <param name="member">The name of the member where this method is called.</param>
+            <param name="file">The name of the file from where this method is called.</param>
+        </member>
+        <member name="M:Vi.Wrapper.Info(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            The 'Info' level is typically used to output information that is useful to the running and management of your system (production). 'Info' would also be the level used to log Entry and Exit points in key areas of your application. However, you may choose to add more entry and exit points at Debug level for more granularity during development and testing.
+            </summary>
+            <param name="text">The text to log.</param>
+            <param name="line">The Line of the file where this method is called.</param>
+            <param name="member">The name of the member where this method is called.</param>
+            <param name="file">The name of the file from where this method is called.</param>
+        </member>
+        <member name="M:Vi.Wrapper.Warn(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            Warning is often used for handled 'exceptions' or other important log events. For example, if your application requires a configuration setting but has a default in case the setting is missing, then the Warning level should be used to log the missing configuration setting.
+            </summary>
+            <param name="text">The text to log.</param>
+            <param name="line">The Line of the file where this method is called.</param>
+            <param name="member">The name of the member where this method is called.</param>
+            <param name="file">The name of the file from where this method is called.</param>
+        </member>
+        <member name="M:Vi.Wrapper.Error(System.Exception,System.Int32,System.String,System.String)">
+            <summary>
+            Error is used to log all unhandled exceptions. This is typically logged inside a catch block at the boundary of your application.
+            </summary>
+            <param name="se">The System.Exception to log.</param>
+            <param name="line">The Line of the file where this method is called.</param>
+            <param name="member">The name of the member where this method is called.</param>
+            <param name="file">The name of the file from where this method is called.</param>
+        </member>
+        <member name="M:Vi.Wrapper.Fatal(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            Fatal is reserved for special exceptions/conditions where it is imperative that you can quickly pick out these events. Fatal should to be used early in an application's development. It's usually only with experience it is possible identify situations worthy of the FATAL moniker experience do specific events become worth of promotion to Fatal. After all, an error's an error.
+            </summary>
+            <param name="text">The text to log.</param>
+            <param name="line">The Line of the file where this method is called.</param>
+            <param name="member">The name of the member where this method is called.</param>
+            <param name="file">The name of the file from where this method is called.</param>
+        </member>
+        <member name="T:Vi.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Vi.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Vi.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>

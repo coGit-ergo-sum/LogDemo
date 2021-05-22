@@ -1,0 +1,65 @@
+﻿<Docs>
+  <type name="Logger">
+    <summary>
+      <img src="\Logger\Images\Logger.png" style="margin: 15px 0px 15px 0px;" />
+<!-- 
+<br /> This latter is the object that truly logs the message. 
+The responsibility of This goal is achieved by a rich set of overloads; a detailed intellisense. 
+makes this class '<b>polymorphic</b>' (using an old-style expression) or 
+
+This goal is achieved by a rich set of overloads; a detailed intellisense.
+-->
+      <p style="Padding: 15px 0px 0px 0px;line-height: 150%;">
+        This class is a '<b>presentation layer</b>' wrapped arount the object (an instace of the class Vi.Log4Vi.Logger) provided by the method <b>SetLogger</b>. 
+        Vi.Logger (this class) exhibits an enhanced set of the classic log methods to improve, as much as possible, the user experience (the developer in this case).        
+      </p>
+
+      <p style="Padding: 15px 0px 0px 0px;line-height: 150%;">
+        The responsibility to 'write' the log belongs to the object supplied to this class by the method SetLogger and it is obvious that how the log is implemented doesn't matter to this class.<br />
+
+        This 'architecture'. is a way to implement a '<b>dependency injection</b>' and 'abstracts' toward the log process, giving:
+        <ul>
+          <li>
+            the freedom to <b>choose and change</b> in any moment the implementation of the logging process between: file system; event viewer; Console, DB; ... . <br />
+          </li>
+          <li>
+            a 'global', static and <b>easy to use</b> method to log messages.
+          </li>
+        </ul>
+        
+        <span style="font-style: italic;font-size: 90%">
+          For example, during the development of a class library it is normal, for the developer, write also a very simple GUI (to interact and test the class library).
+          The hassle is that (normally) the class library 'writes' to the Console. Instead, working with a GUI is easier to have the message directly on the window form.
+          with this class <b>the switch takes just one line of code</b>, and affects not only the GUI but also the class library (Thus, since the class library is hosted within the GUI, it writes to the 'screen'. When the host change, change also the destination for the log.).
+        </span>
+      </p>
+
+
+      <p style="Padding: 15px 0px 0px 0px;line-height: 150%;">
+        The advantages, this solution brings, are:
+        <ol>
+          <li>
+            <b>Sets a standard for the company</b>: It is common experience that every developer has its own "style" when writes logs. This shouldn't happen (especially in a well structured company.)
+          </li>
+          <li>
+            <b>Removes the dependency on the specific logging tool</b> adopted: the developer doesn't need to know, how the log is performed. The way logs are 'written' can change at any time (file system; event viewer; DB; screen; ...) .
+          </li>
+          <li>
+            <b>Simplicity</b>: Log4Net is a very powerful tool: just 'plug &amp; forget'. Its drawback is the 'configuration' (by my experience make it run is a nightmare.) This class removes this problem. 
+          </li>
+        </ol>
+      </p>
+
+      
+    </summary>
+
+  </type>
+  <method name="Info">
+    <summary>
+      <p style="Padding: 15px 0px 0px 0px;">
+        Use this method to log the messages used to monitor the apllication in production.
+      </p>      
+    </summary>
+  </method>
+</Docs>
+

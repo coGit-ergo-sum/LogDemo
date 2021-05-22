@@ -1,0 +1,18 @@
+﻿<Docs>
+  <type name="NamespaceDoc">
+    <summary>
+      <p style="">
+        The namespace 'Vi' is a collection of utilities with the aim to provide
+        simple tools to facilitate everyday's tasks and company's standards.
+      </p>
+    </summary>
+  </type>
+  <CTors name="NamespaceDoc">
+    <summary>
+      <p style="">
+
+      </p>
+    </summary>
+  </CTors>
+
+</Docs>

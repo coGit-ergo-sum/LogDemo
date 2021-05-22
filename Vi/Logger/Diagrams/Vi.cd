@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Vi.Logger">
+    <Position X="1.25" Y="0.5" Width="3" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="Vi.Logger.Levels" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Logger\Class.Logger.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Class Name="Vi.Logger.FakeLog" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Logger\Class.Logger.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+      <Delegate Name="Vi.Logger.FormatDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Logger\Class.Logger.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Class Name="Vi.Logger.FormatClass" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Logger\Class.Logger.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAYAAAAAAAAAAAAgAgAEAAAAAAEEEIAA=</HashCode>
+      <FileName>Logger\Class.Logger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Vi.List4Log">
+    <Position X="5.75" Y="0.5" Width="2.5" />
+    <Members>
+      <Field Name="label1" Hidden="true" />
+      <Field Name="panel1" Hidden="true" />
+      <Field Name="pictureBox1" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AEABAAACACAAABAAAACAAAACAAAAgAAAAABAAYBAAAA=</HashCode>
+      <FileName>Logger\List4Log.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Vi.ILog">
+    <Position X="5.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAYAAAAAAAAAAAAAAAAEAAAAAAEAEAAA=</HashCode>
+      <FileName>Logger\Interface.ILog.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,16 @@
+C:\Vi\Code\c#\DualComConnected\Log4CSL\obj\Release\Log4CSL.csprojResolveAssemblyReference.cache
+C:\Vi\Code\c#\DualComConnected\Log4CSL\bin\Release\Log4CSL.dll
+C:\Vi\Code\c#\DualComConnected\Log4CSL\bin\Release\Log4CSL.pdb
+C:\Vi\Code\c#\DualComConnected\Log4CSL\bin\Release\log4net.dll
+C:\Vi\Code\c#\DualComConnected\Log4CSL\bin\Release\Shared.dll
+C:\Vi\Code\c#\DualComConnected\Log4CSL\bin\Release\Shared.pdb
+C:\Vi\Code\c#\DualComConnected\Log4CSL\obj\Release\Log4CSL.dll
+C:\Vi\Code\c#\DualComConnected\Log4CSL\obj\Release\Log4CSL.pdb
+C:\Vi\Code\c#\DCCV2\Log4CSL\bin\Release\Log4CSL.dll
+C:\Vi\Code\c#\DCCV2\Log4CSL\bin\Release\Log4CSL.pdb
+C:\Vi\Code\c#\DCCV2\Log4CSL\bin\Release\CSL.dll
+C:\Vi\Code\c#\DCCV2\Log4CSL\bin\Release\log4net.dll
+C:\Vi\Code\c#\DCCV2\Log4CSL\bin\Release\CSL.pdb
+C:\Vi\Code\c#\DCCV2\Log4CSL\obj\Release\Log4CSL.csprojResolveAssemblyReference.cache
+C:\Vi\Code\c#\DCCV2\Log4CSL\obj\Release\Log4CSL.dll
+C:\Vi\Code\c#\DCCV2\Log4CSL\obj\Release\Log4CSL.pdb

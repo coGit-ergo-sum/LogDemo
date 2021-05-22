@@ -1,0 +1,2393 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CSL</name>
+    </assembly>
+    <members>
+        <member name="T:CSL.Enums.ASCII">
+            <summary>
+            an enum for the ASCII table.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.NUL">
+            <summary>
+            Null char
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.SOH">
+            <summary>
+            Start of Heading
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.STX">
+            <summary>
+            Start of Text
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.ETX">
+            <summary>
+            End of Text
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.EOT">
+            <summary>
+            End of Transmission
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.ENQ">
+            <summary>
+            Enquiry
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.ACK">
+            <summary>
+            Acknowledgment
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.BEL">
+            <summary>
+            Bell
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.BS">
+            <summary>
+            Back Space
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.HT">
+            <summary>
+            Horizontal Tab
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.LF">
+            <summary>
+            Line Feed
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.VT">
+            <summary>
+            Vertical Tab
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.FF">
+            <summary>
+            Form Feed
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.CR">
+            <summary>
+            Carriage Return
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.SO">
+            <summary>
+            Shift Out / X-On
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.SI">
+            <summary>
+            Shift In / X-Off
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.DLE">
+            <summary>
+            Data Line Escape
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.DC1">
+            <summary>
+            Device Control 1 (oft. XON)
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.DC2">
+            <summary>
+            Device Control 2
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.DC3">
+            <summary>
+            Device Control 3 (oft. XOFF)
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.DC4">
+            <summary>
+            Device Control 4
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.NAK">
+            <summary>
+            Negative Acknowledgement
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.SYN">
+            <summary>
+            Synchronous Idle
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.ETB">
+            <summary>
+            End of Transmit Block
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.CAN">
+            <summary>
+            Cancel
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.EM">
+            <summary>
+            End of Medium
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.SUB">
+            <summary>
+            Substitute
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.ESC">
+            <summary>
+            Escape
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.FS">
+            <summary>
+            File Separator
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.GS">
+            <summary>
+            Group Separator
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.RS">
+            <summary>
+            Record Separator
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.US">
+            <summary>
+            Unit Separator
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.U129">
+            <summary>
+            U129
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.U141">
+            <summary>
+            U141
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.U143">
+            <summary>
+            U143
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.U144">
+            <summary>
+            U144
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.U157">
+            <summary>
+            U157
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.euro">
+            <summary>
+            Euro sign
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.sbquo">
+            <summary>
+            Single low-9 quotation mark
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.fnof">
+            <summary>
+            Latin small letter f with hook
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.bdquo">
+            <summary>
+            Double low-9 quotation mark
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.hellip">
+            <summary>
+            Horizontal ellipsis
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.dagger">
+            <summary>
+            Dagger
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.Dagger">
+            <summary>
+            Double dagger
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.circ">
+            <summary>
+            Modifier letter circumflex accent
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.permil">
+            <summary>
+            Per mille sign
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.Scaron">
+            <summary>
+            Latin capital letter S with caron
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.lsaquo">
+            <summary>
+            Single left-pointing angle quotation
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.OElig">
+            <summary>
+            Latin capital ligature OE
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.ZCaron">
+            <summary>
+            Latin captial letter Z with caron
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.lsquo">
+            <summary>
+            Left single quotation mark
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.rsquo">
+            <summary>
+            Right single quotation mark
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.ldquo">
+            <summary>
+            Left double quotation mark
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.rdquo">
+            <summary>
+            Right double quotation mark
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.bull">
+            <summary>
+            Bullet
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.ndash">
+            <summary>
+            En dash
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.mdash">
+            <summary>
+            Em dash 
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.tilde">
+            <summary>
+            Small tilde
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.trade">
+            <summary>
+            Trade mark sign
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.scaron">
+            <summary>
+            Latin small letter S with caron
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.rsaquo">
+            <summary>
+            Single right-pointing angle quotation mark
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.oelig">
+            <summary>
+            Latin small ligature oe
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.zCaron">
+            <summary>
+            Latin small letter 
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.Yuml">
+            <summary>
+            Latin capital letter Y with diaeresis
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.nbsp">
+            <summary>
+            Non-breaking space
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.iexcl">
+            <summary>
+            Inverted exclamation mark
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.cent">
+            <summary>
+            Cent sign
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.pound">
+            <summary>
+            Pound sign
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.curren">
+            <summary>
+            Currency sign
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.yen">
+            <summary>
+            Yen sign
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.brvbar">
+            <summary>
+            Pipe, Broken vertical bar
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.sect">
+            <summary>
+            Section sign
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.uml">
+            <summary>
+            Spacing diaeresis - umlaut
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.copy">
+            <summary>
+            Copyright sign
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.ordf">
+            <summary>
+            Feminine ordinal indicator
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.laquo">
+            <summary>
+            Left double angle quotes
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.not">
+            <summary>
+            Not sign
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.shy">
+            <summary>
+            Soft hyphen
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.reg">
+            <summary>
+            Registered trade mark sign
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.macr">
+            <summary>
+            Spacing macron - overline
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.deg">
+            <summary>
+            Degree sign
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.plusmn">
+            <summary>
+            Plus-or-minus sign
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.sup2">
+            <summary>
+            Superscript two - squared
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.sup3">
+            <summary>
+            Superscript three - cubed
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.acute">
+            <summary>
+            Acute accent - spacing acute
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.micro">
+            <summary>
+            Micro sign
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.para">
+            <summary>
+            Pilcrow sign - paragraph sign
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.middot">
+            <summary>
+            Middle dot - Georgian comma
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.cedil">
+            <summary>
+            Spacing cedilla
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.sup1">
+            <summary>
+            Superscript one
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.ordm">
+            <summary>
+            Masculine ordinal indicator
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.raquo">
+            <summary>
+            Right double angle quotes
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.frac14">
+            <summary>
+            Fraction one quarter
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.frac12">
+            <summary>
+            Fraction one half
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.frac34">
+            <summary>
+            Fraction three quarters
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.iquest">
+            <summary>
+            Inverted question mark
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.Agrave">
+            <summary>
+            Latin capital letter A with grave
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.Aacute">
+            <summary>
+            Latin capital letter A with acute
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.Acirc">
+            <summary>
+            Latin capital letter A with circumflex
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.Atilde">
+            <summary>
+            Latin capital letter A with tilde
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.Auml">
+            <summary>
+            Latin capital letter A with diaeresis
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.Aring">
+            <summary>
+            Latin capital letter A with ring above
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.AElig">
+            <summary>
+            Latin capital letter AE
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.Ccedil">
+            <summary>
+            Latin capital letter C with cedilla
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.Egrave">
+            <summary>
+            Latin capital letter E with grave
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.Eacute">
+            <summary>
+            Latin capital letter E with acute
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.Ecirc">
+            <summary>
+            Latin capital letter E with circumflex
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.Euml">
+            <summary>
+            Latin capital letter E with diaeresis
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.Igrave">
+            <summary>
+            Latin capital letter I with grave
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.Iacute">
+            <summary>
+            Latin capital letter I with acute
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.Icirc">
+            <summary>
+            Latin capital letter I with circumflex
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.Iuml">
+            <summary>
+            Latin capital letter I with diaeresis
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.ETH">
+            <summary>
+            Latin capital letter ETH
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.Ntilde">
+            <summary>
+            Latin capital letter N with tilde
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.Ograve">
+            <summary>
+            Latin capital letter O with grave
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.Oacute">
+            <summary>
+            Latin capital letter O with acute
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.Ocirc">
+            <summary>
+            Latin capital letter O with circumflex
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.Otilde">
+            <summary>
+            Latin capital letter O with tilde
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.Ouml">
+            <summary>
+            Latin capital letter O with diaeresis
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.times">
+            <summary>
+            Multiplication sign
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.Oslash">
+            <summary>
+            Latin capital letter O with slash
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.Ugrave">
+            <summary>
+            Latin capital letter U with grave
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.Uacute">
+            <summary>
+            Latin capital letter U with acute
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.Ucirc">
+            <summary>
+            Latin capital letter U with circumflex
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.Uuml">
+            <summary>
+            Latin capital letter U with diaeresis
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.Yacute">
+            <summary>
+            Latin capital letter Y with acute
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.THORN">
+            <summary>
+             Latin capital letter THORN
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.szlig">
+            <summary>
+            Latin small letter sharp s - ess-zed
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.agrave">
+            <summary>
+            Latin small letter a with grave
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.aacute">
+            <summary>
+            Latin small letter a with acute
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.acirc">
+            <summary>
+            Latin small letter a with circumflex
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.atilde">
+            <summary>
+            Latin small letter a with tilde
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.auml">
+            <summary>
+            Latin small letter a with diaeresis
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.aring">
+            <summary>
+            Latin small letter a with ring above
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.aelig">
+            <summary>
+            Latin small letter ae
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.ccedil">
+            <summary>
+            Latin small letter c with cedilla
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.egrave">
+            <summary>
+            Latin small letter e with grave
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.eacute">
+            <summary>
+            Latin small letter e with acute
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.ecirc">
+            <summary>
+            Latin small letter e with circumflex
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.euml">
+            <summary>
+            Latin small letter e with diaeresis 
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.igrave">
+            <summary>
+            Latin small letter i with grave
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.iacute">
+            <summary>
+            Latin small letter i with acute
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.icirc">
+            <summary>
+            Latin small letter i with circumflex
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.iuml">
+            <summary>
+            Latin small letter i with diaeresis
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.eth">
+            <summary>
+            Latin small letter eth
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.ntilde">
+            <summary>
+            Latin small letter n with tilde
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.ograve">
+            <summary>
+            Latin small letter o with grave
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.oacute">
+            <summary>
+            Latin small letter o with acute
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.ocirc">
+            <summary>
+            Latin small letter o with circumflex
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.otilde">
+            <summary>
+            Latin small letter o with tilde
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.ouml">
+            <summary>
+            Latin small letter o with diaeresis 
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.divide">
+            <summary>
+            Division sign 
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.oslash">
+            <summary>
+            Latin small letter o with slash
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.ugrave">
+            <summary>
+            Latin small letter u with grave
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.uacute">
+            <summary>
+            Latin small letter u with acute
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.ucirc">
+            <summary>
+            Latin small letter u with circumflex
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.uuml">
+            <summary>
+            Latin small letter u with diaeresis
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.yacute">
+            <summary>
+            Latin small letter y with acute 
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.thorn">
+            <summary>
+            Latin small letter thorn
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ASCII.yuml">
+            <summary>
+            Latin small letter y with diaeresis
+            </summary>
+        </member>
+        <member name="T:CSL.Enums.ErrorCodes">
+            <summary>
+            The list of the code for the socket exception
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSA_INVALID_HANDLE">
+            <summary>
+            Specified event object handle is invalid. An application attempts to use an event object, but the specified handle is not valid. Note that this error is returned by the operating system, so the error number may change in future releases of Windows.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSA_NOT_ENOUGH_MEMORY">
+            <summary>
+            Insufficient memory available. An application used a Windows Sockets function that directly maps to a Windows function. The Windows function is indicating a lack of required memory resources. Note that this error is returned by the operating system, so the error number may change in future releases of Windows.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSA_INVALID_PARAMETER">
+            <summary>
+            One or more parameters are invalid. An application used a Windows Sockets function which directly maps to a Windows function. The Windows function is indicating a problem with one or more parameters. Note that this error is returned by the operating system, so the error number may change in future releases of Windows.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSA_OPERATION_ABORTED">
+            <summary>
+            Overlapped operation aborted. An overlapped operation was canceled due to the closure of the socket, or the execution of the SIO_FLUSH command in WSAIoctl. Note that this error is returned by the operating system, so the error number may change in future releases of Windows.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSA_IO_INCOMPLETE">
+            <summary>
+            Overlapped I/O event object not in signaled state. The application has tried to determine the status of an overlapped operation which is not yet completed. Applications that use WSAGetOverlappedResult (with the fWait flag set to FALSE) in a polling mode to determine when an overlapped operation has completed, get this error code until the operation is complete. Note that this error is returned by the operating system, so the error number may change in future releases of Windows.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSA_IO_PENDING">
+            <summary>
+            Overlapped operations will complete later. The application has initiated an overlapped operation that cannot be completed immediately. A completion indication will be given later when the operation has been completed. Note that this error is returned by the operating system, so the error number may change in future releases of Windows.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAEINTR">
+            <summary>
+            Interrupted function call. A blocking operation was interrupted by a call to WSACancelBlockingCall.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAEBADF">
+            <summary>
+            File handle is not valid. The file handle supplied is not valid.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAEACCES">
+            <summary>
+            Permission denied. An attempt was made to access a socket in a way forbidden by its access permissions. An example is using a broadcast address for sendto without broadcast permission being set using setsockopt(SO_BROADCAST). Another possible reason for the WSAEACCES error is that when the bind function is called (on Windows NT 4.0 with SP4 and later), another application, service, or kernel mode driver is bound to the same address with exclusive access. Such exclusive access is a new feature of Windows NT 4.0 with SP4 and later, and is implemented by using the SO_EXCLUSIVEADDRUSE option.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAEFAULT">
+            <summary>
+            Bad address. The system detected an invalid pointer address in attempting to use a pointer argument of a call. This error occurs if an application passes an invalid pointer value, or if the length of the buffer is too small. For instance, if the length of an argument, which is a sockaddr structure, is smaller than the sizeof(sockaddr).
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAEINVAL">
+            <summary>
+            Invalid argument. Some invalid argument was supplied (for example, specifying an invalid level to the setsockopt function). In some instances, it also refers to the current state of the socket—for instance, calling accept on a socket that is not listening.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAEMFILE">
+            <summary>
+            Too many open files. Too many open sockets. Each implementation may have a maximum number of socket handles available, either globally, per process, or per thread.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAEWOULDBLOCK">
+            <summary>
+            Resource temporarily unavailable. This error is returned from operations on nonblocking sockets that cannot be completed immediately, for example recv when no data is queued to be read from the socket. It is a nonfatal error, and the operation should be retried later. It is normal for WSAEWOULDBLOCK to be reported as the result from calling connect on a nonblocking SOCK_STREAM socket, since some time must elapse for the connection to be established.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAEINPROGRESS">
+            <summary>
+            Operation now in progress. A blocking operation is currently executing. Windows Sockets only allows a single blocking operation—per- task or thread—to be outstanding, and if any other function call is made (whether or not it references that or any other socket) the function fails with the WSAEINPROGRESS error.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAEALREADY">
+            <summary>
+            Operation already in progress. An operation was attempted on a nonblocking socket with an operation already in progress—that is, calling connect a second time on a nonblocking socket that is already connecting, or canceling an asynchronous request (WSAAsyncGetXbyY) that has already been canceled or completed.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAENOTSOCK">
+            <summary>
+            Socket operation on nonsocket. An operation was attempted on something that is not a socket. Either the socket handle parameter did not reference a valid socket, or for select, a member of an fd_set was not valid.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAEDESTADDRREQ">
+            <summary>
+            Destination address required. A required address was omitted from an operation on a socket. For example, this error is returned if sendto is called with the remote address of ADDR_ANY.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAEMSGSIZE">
+            <summary>
+            Message too long. A message sent on a datagram socket was larger than the internal message buffer or some other network limit, or the buffer used to receive a datagram was smaller than the datagram itself.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAEPROTOTYPE">
+            <summary>
+            Protocol wrong type for socket. A protocol was specified in the socket function call that does not support the semantics of the socket type requested. For example, the ARPA Internet UDP protocol cannot be specified with a socket type of SOCK_STREAM.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAENOPROTOOPT">
+            <summary>
+            Bad protocol option. An unknown, invalid or unsupported option or level was specified in a getsockopt or setsockopt call.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAEPROTONOSUPPORT">
+            <summary>
+            Protocol not supported. The requested protocol has not been configured into the system, or no implementation for it exists. For example, a socket call requests a SOCK_DGRAM socket, but specifies a stream protocol.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAESOCKTNOSUPPORT">
+            <summary>
+            Socket type not supported. The support for the specified socket type does not exist in this address family. For example, the optional type SOCK_RAW might be selected in a socket call, and the implementation does not support SOCK_RAW sockets at all.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAEOPNOTSUPP">
+            <summary>
+            Operation not supported. The attempted operation is not supported for the type of object referenced. Usually this occurs when a socket descriptor to a socket that cannot support this operation is trying to accept a connection on a datagram socket.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAEPFNOSUPPORT">
+            <summary>
+            Protocol family not supported. The protocol family has not been configured into the system or no implementation for it exists. This message has a slightly different meaning from WSAEAFNOSUPPORT. However, it is interchangeable in most cases, and all Windows Sockets functions that return one of these messages also specify WSAEAFNOSUPPORT.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAEAFNOSUPPORT">
+            <summary>
+            Address family not supported by protocol family. An address incompatible with the requested protocol was used. All sockets are created with an associated address family (that is, AF_INET for Internet Protocols) and a generic protocol type (that is, SOCK_STREAM). This error is returned if an incorrect protocol is explicitly requested in the socket call, or if an address of the wrong family is used for a socket, for example, in sendto.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAEADDRINUSE">
+            <summary>
+            Address already in use. Typically, only one usage of each socket address (protocol/IP address/port) is permitted. This error occurs if an application attempts to bind a socket to an IP address/port that has already been used for an existing socket, or a socket that was not closed properly, or one that is still in the process of closing. For server applications that need to bind multiple sockets to the same port number, consider using setsockopt (SO_REUSEADDR). Client applications usually need not call bind at all—connect chooses an unused port automatically. When bind is called with a wildcard address (involving ADDR_ANY), a WSAEADDRINUSE error could be delayed until the specific address is committed. This could happen with a call to another function later, including connect, listen, WSAConnect, or WSAJoinLeaf.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAEADDRNOTAVAIL">
+            <summary>
+            Cannot assign requested address. The requested address is not valid in its context. This normally results from an attempt to bind to an address that is not valid for the local computer. This can also result from connect, sendto, WSAConnect, WSAJoinLeaf, or WSASendTo when the remote address or port is not valid for a remote computer (for example, address or port 0).
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAENETDOWN">
+            <summary>
+            Network is down. A socket operation encountered a dead network. This could indicate a serious failure of the network system (that is, the protocol stack that the Windows Sockets DLL runs over), the network interface, or the local network itself.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAENETUNREACH">
+            <summary>
+            Network is unreachable. A socket operation was attempted to an unreachable network. This usually means the local software knows no route to reach the remote host.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAENETRESET">
+            <summary>
+            Network dropped connection on reset. The connection has been broken due to keep-alive activity detecting a failure while the operation was in progress. It can also be returned by setsockopt if an attempt is made to set SO_KEEPALIVE on a connection that has already failed.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAECONNABORTED">
+            <summary>
+            Software caused connection abort. An established connection was aborted by the software in your host computer, possibly due to a data transmission time-out or protocol error.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAECONNRESET">
+            <summary>
+            Connection reset by peer. An existing connection was forcibly closed by the remote host. This normally results if the peer application on the remote host is suddenly stopped, the host is rebooted, the host or remote network interface is disabled, or the remote host uses a hard close (see setsockopt for more information on the SO_LINGER option on the remote socket). This error may also result if a connection was broken due to keep-alive activity detecting a failure while one or more operations are in progress. Operations that were in progress fail with WSAENETRESET. Subsequent operations fail with WSAECONNRESET.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAENOBUFS">
+            <summary>
+            No buffer space available. An operation on a socket could not be performed because the system lacked sufficient buffer space or because a queue was full.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAEISCONN">
+            <summary>
+            Socket is already connected. A connect request was made on an already-connected socket. Some implementations also return this error if sendto is called on a connected SOCK_DGRAM socket (for SOCK_STREAM sockets, the to parameter in sendto is ignored) although other implementations treat this as a legal occurrence.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAENOTCONN">
+            <summary>
+            Socket is not connected. A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using sendto) no address was supplied. Any other type of operation might also return this error—for example, setsockopt setting SO_KEEPALIVE if the connection has been reset.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAESHUTDOWN">
+            <summary>
+            Cannot send after socket shutdown. A request to send or receive data was disallowed because the socket had already been shut down in that direction with a previous shutdown call. By calling shutdown a partial close of a socket is requested, which is a signal that sending or receiving, or both have been discontinued.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAETOOMANYREFS">
+            <summary>
+            Too many references. Too many references to some kernel object.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAETIMEDOUT">
+            <summary>
+            Connection timed out. A connection attempt failed because the connected party did not properly respond after a period of time, or the established connection failed because the connected host has failed to respond.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAECONNREFUSED">
+            <summary>
+            Connection refused. No connection could be made because the target computer actively refused it. This usually results from trying to connect to a service that is inactive on the foreign host—that is, one with no server application running.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAELOOP">
+            <summary>
+            Cannot translate name. Cannot translate a name.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAENAMETOOLONG">
+            <summary>
+            Name too long. A name component or a name was too long.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAEHOSTDOWN">
+            <summary>
+            Host is down. A socket operation failed because the destination host is down. A socket operation encountered a dead host. Networking activity on the local host has not been initiated. These conditions are more likely to be indicated by the error WSAETIMEDOUT.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAEHOSTUNREACH">
+            <summary>
+            No route to host. A socket operation was attempted to an unreachable host. See WSAENETUNREACH.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAENOTEMPTY">
+            <summary>
+            Directory not empty. Cannot remove a directory that is not empty.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAEPROCLIM">
+            <summary>
+            Too many processes. A Windows Sockets implementation may have a limit on the number of applications that can use it simultaneously. WSAStartup may fail with this error if the limit has been reached.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAEUSERS">
+            <summary>
+            User quota exceeded. Ran out of user quota.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAEDQUOT">
+            <summary>
+            Disk quota exceeded. Ran out of disk quota.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAESTALE">
+            <summary>
+            Stale file handle reference. The file handle reference is no longer available.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAEREMOTE">
+            <summary>
+            Item is remote. The item is not available locally.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSASYSNOTREADY">
+            <summary>
+            Network subsystem is unavailable. This error is returned by WSAStartup if the Windows Sockets implementation cannot function at this time because the underlying system it uses to provide network services is currently unavailable. Users should check: That the appropriate Windows Sockets DLL file is in the current path. That they are not trying to use more than one Windows Sockets implementation simultaneously. If there is more than one Winsock DLL on your system, be sure the first one in the path is appropriate for the network subsystem currently loaded. The Windows Sockets implementation documentation to be sure all necessary components are currently installed and configured correctly.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAVERNOTSUPPORTED">
+            <summary>
+            Winsock.dll version out of range. The current Windows Sockets implementation does not support the Windows Sockets specification version requested by the application. Check that no old Windows Sockets DLL files are being accessed.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSANOTINITIALISED">
+            <summary>
+            Successful WSAStartup not yet performed. Either the application has not called WSAStartup or WSAStartup failed. The application may be accessing a socket that the current active task does not own (that is, trying to share a socket between tasks), or WSACleanup has been called too many times.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAEDISCON">
+            <summary>
+            Graceful shutdown in progress. Returned by WSARecv and WSARecvFrom to indicate that the remote party has initiated a graceful shutdown sequence.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAENOMORE">
+            <summary>
+            No more results. No more results can be returned by the WSALookupServiceNext function.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAECANCELLED">
+            <summary>
+            Call has been canceled. A call to the WSALookupServiceEnd function was made while this call was still processing. The call has been canceled.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAEINVALIDPROCTABLE">
+            <summary>
+            Procedure call table is invalid. The service provider procedure call table is invalid. A service provider returned a bogus procedure table to Ws2_32.dll. This is usually caused by one or more of the function pointers being NULL.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAEINVALIDPROVIDER">
+            <summary>
+            Service provider is invalid. The requested service provider is invalid. This error is returned by the WSCGetProviderInfo and WSCGetProviderInfo32 functions if the protocol entry specified could not be found. This error is also returned if the service provider returned a version number other than 2.0.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAEPROVIDERFAILEDINIT">
+            <summary>
+            Service provider failed to initialize. The requested service provider could not be loaded or initialized. This error is returned if either a service provider's DLL could not be loaded (LoadLibrary failed) or the provider's WSPStartup or NSPStartup function failed.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSASYSCALLFAILURE">
+            <summary>
+            System call failure. A system call that should never fail has failed. This is a generic error code, returned under various conditions. Returned when a system call that should never fail does fail. For example, if a call to WaitForMultipleEvents fails or one of the registry functions fails trying to manipulate the protocol/namespace catalogs. Returned when a provider does not return SUCCESS and does not provide an extended error code. Can indicate a service provider implementation error.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSASERVICE_NOT_FOUND">
+            <summary>
+            Service not found. No such service is known. The service cannot be found in the specified name space.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSATYPE_NOT_FOUND">
+            <summary>
+            Class type not found. The specified class was not found.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSA_E_NO_MORE">
+            <summary>
+            No more results. No more results can be returned by the WSALookupServiceNext function.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSA_E_CANCELLED">
+            <summary>
+            Call was canceled. A call to the WSALookupServiceEnd function was made while this call was still processing. The call has been canceled.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAEREFUSED">
+            <summary>
+            Database query was refused. A database query failed because it was actively refused.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSAHOST_NOT_FOUND">
+            <summary>
+            Host not found. No such host is known. The name is not an official host name or alias, or it cannot be found in the database(s) being queried. This error may also be returned for protocol and service queries, and means that the specified name could not be found in the relevant database.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSATRY_AGAIN">
+            <summary>
+            Nonauthoritative host not found. This is usually a temporary error during host name resolution and means that the local server did not receive a response from an authoritative server. A retry at some time later may be successful.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSANO_RECOVERY">
+            <summary>
+            This is a nonrecoverable error. This indicates that some sort of nonrecoverable error occurred during a database lookup. This may be because the database files (for example, BSD-compatible HOSTS, SERVICES, or PROTOCOLS files) could not be found, or a DNS request was returned by the server with a severe error.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSANO_DATA">
+            <summary>
+            Valid name, no data record of requested type. The requested name is valid and was found in the database, but it does not have the correct associated data being resolved for. The usual example for this is a host name-to-address translation attempt (using gethostbyname or WSAAsyncGetHostByName) which uses the DNS (Domain Name Server). An MX record is returned but no A record—indicating the host itself exists, but is not directly reachable.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSA_QOS_RECEIVERS">
+            <summary>
+            QoS receivers. At least one QoS reserve has arrived.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSA_QOS_SENDERS">
+            <summary>
+            QoS senders. At least one QoS send path has arrived.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSA_QOS_NO_SENDERS">
+            <summary>
+            No QoS senders. There are no QoS senders.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSA_QOS_NO_RECEIVERS">
+            <summary>
+            QoS no receivers. There are no QoS receivers.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSA_QOS_REQUEST_CONFIRMED">
+            <summary>
+            QoS request confirmed. The QoS reserve request has been confirmed.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSA_QOS_ADMISSION_FAILURE">
+            <summary>
+            QoS admission error. A QoS error occurred due to lack of resources.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSA_QOS_POLICY_FAILURE">
+            <summary>
+            QoS policy failure. The QoS request was rejected because the policy system couldn't allocate the requested resource within the existing policy.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSA_QOS_BAD_STYLE">
+            <summary>
+            QoS bad style. An unknown or conflicting QoS style was encountered.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSA_QOS_BAD_OBJECT">
+            <summary>
+            QoS bad object. A problem was encountered with some part of the filterspec or the provider-specific buffer in general.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSA_QOS_TRAFFIC_CTRL_ERROR">
+            <summary>
+            QoS traffic control error. An error with the underlying traffic control (TC) API as the generic QoS request was converted for local enforcement by the TC API. This could be due to an out of memory error or to an internal QoS provider error.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSA_QOS_GENERIC_ERROR">
+            <summary>
+            QoS generic error. A general QoS error.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSA_QOS_ESERVICETYPE">
+            <summary>
+            QoS service type error. An invalid or unrecognized service type was found in the QoS flowspec.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSA_QOS_EFLOWSPEC">
+            <summary>
+            QoS flowspec error. An invalid or inconsistent flowspec was found in the QOS structure.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSA_QOS_EPROVSPECBUF">
+            <summary>
+            Invalid QoS provider buffer. An invalid QoS provider-specific buffer.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSA_QOS_EFILTERSTYLE">
+            <summary>
+            Invalid QoS filter style. An invalid QoS filter style was used.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSA_QOS_EFILTERTYPE">
+            <summary>
+            Invalid QoS filter type. An invalid QoS filter type was used.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSA_QOS_EFILTERCOUNT">
+            <summary>
+            Incorrect QoS filter count. An incorrect number of QoS FILTERSPECs were specified in the FLOWDESCRIPTOR.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSA_QOS_EOBJLENGTH">
+            <summary>
+            Invalid QoS object length. An object with an invalid ObjectLength field was specified in the QoS provider-specific buffer.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSA_QOS_EFLOWCOUNT">
+            <summary>
+            Incorrect QoS flow count. An incorrect number of flow descriptors was specified in the QoS structure.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSA_QOS_EUNKOWNPSOBJ">
+            <summary>
+            Unrecognized QoS object. An unrecognized object was found in the QoS provider-specific buffer.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSA_QOS_EPOLICYOBJ">
+            <summary>
+            Invalid QoS policy object. An invalid policy object was found in the QoS provider-specific buffer.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSA_QOS_EFLOWDESC">
+            <summary>
+            Invalid QoS flow descriptor. An invalid QoS flow descriptor was found in the flow descriptor list.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSA_QOS_EPSFLOWSPEC">
+            <summary>
+            Invalid QoS provider-specific flowspec. An invalid or inconsistent flowspec was found in the QoS provider-specific buffer. 
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSA_QOS_EPSFILTERSPEC">
+            <summary>
+            Invalid QoS provider-specific filterspec. An invalid FILTERSPEC was found in the QoS provider-specific buffer.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSA_QOS_ESDMODEOBJ">
+            <summary>
+            Invalid QoS shape discard mode object. An invalid shape discard mode object was found in the QoS provider-specific buffer.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSA_QOS_ESHAPERATEOBJ">
+            <summary>
+            Invalid QoS shaping rate object. An invalid shaping rate object was found in the QoS provider-specific buffer.
+            </summary>
+        </member>
+        <member name="F:CSL.Enums.ErrorCodes.WSA_QOS_RESERVED_PETYPE">
+            <summary>
+            Reserved policy QoS element type. A reserved policy element was found in the QoS provider-specific buffer.
+            </summary>
+        </member>
+        <member name="T:CSL.Utilities.IPEndPoint">
+            <summary>
+            Collection of Utility methods
+            </summary>
+        </member>
+        <member name="M:CSL.Utilities.IPEndPoint.Parse(System.String,System.String)">
+            <summary>
+            Parses a couple of strings to get an IPEndpoint (this method is not native in the original 'System.Net.IPEndPoint'
+            </summary>
+            <param name="ip">The ip address in the format xxx.xxx.xxx.xxx .</param>
+            <param name="port">The port number.</param>
+            <returns>The IPEndPoint from the ip and port.</returns>
+        </member>
+        <member name="M:CSL.Utilities.IPEndPoint.Parse(System.String,System.Int32)">
+            <summary>
+            Parses a couple of strings to get an IPEndpoint (this method is not native in the original 'System.Net.IPEndPoint'
+            </summary>
+            <param name="ip">The ip address in the format xxx.xxx.xxx.xxx .</param>
+            <param name="port">The port number.</param>
+            <returns>The IPEndPoint from the ip and port.</returns>
+        </member>
+        <member name="T:CSL.Utilities.String">
+            <summary>
+            Collection of Utility methods
+            </summary>
+        </member>
+        <member name="M:CSL.Utilities.String.IsNullOrEmptyOrSpaces(System.String)">
+            <summary>
+            Checks if the string is null; empty or filled with spaces.
+            </summary>
+            <param name="value">The string to check.</param>
+            <returns>True if the string is null; empty or filled with spaces.</returns>
+        </member>
+        <member name="T:CSL.Utilities.Extentions.Methods">
+            <summary>
+            Collection of Utility Extention methods
+            </summary>
+            <summary>
+            Collection of Utility Extention methods
+            </summary>
+            <summary>
+            Collection of Utility Extention methods
+            </summary>
+            <summary>
+            Collection of Utility Extention methods
+            </summary>
+            <summary>
+            Collection of Utility Extention methods
+            </summary>
+            <summary>
+            Collection of Utility Extention methods
+            </summary>
+            <summary>
+            Collection of Utility Extention methods
+            </summary>
+            <Members name="ByteConversion">
+    <summary>
+      The methods in this class are defined only to provide an user frendly approach. the true implementation are (mormally) in the class '<b>CSL.Utilities.BytesConversion</b>'
+    </summary>
+  </Members>
+            <summary>
+            Collection of Utility Extention methods
+            </summary>
+        </member>
+        <member name="M:CSL.Utilities.Extentions.Methods.isInteger(System.String)">
+            <summary>
+            Execute the 'int.TryParse' over the string. 
+            </summary>
+            <param name="value">The string to analyze.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CSL.Utilities.Extentions.Methods.IsNullOrEmptyOrSpaces(System.String)">
+            <summary>
+            Analize the provided string 
+            </summary>
+            <param name="value">The string to check.</param>
+            <returns>true if the provided string is null or empty of composed by spaces.</returns>
+        </member>
+        <member name="M:CSL.Utilities.Extentions.Methods.Debug(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            Use this method to log messages good during the development process.
+            </summary>
+            <param name="value">The text to log.</param>
+            <param name="line">The line from where this method was called.</param>
+            <param name="member">The member from where this method was called.</param>
+            <param name="file">The file from where this method was called.</param>
+        </member>
+        <member name="M:CSL.Utilities.Extentions.Methods.Warn(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            Use this method to log messages for any kind of not correct condition .
+            </summary>
+            <param name="value">The text to log.</param>
+            <param name="line">The line from where this method was called.</param>
+            <param name="member">The member from where this method was called.</param>
+            <param name="file">The file from where this method was called.</param>
+        </member>
+        <member name="M:CSL.Utilities.Extentions.Methods.Fatal(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            Use this method to log very exceptional messages .
+            </summary>
+            <param name="value">The text to log.</param>
+            <param name="line">The line from where this method was called.</param>
+            <param name="member">The member from where this method was called.</param>
+            <param name="file">The file from where this method was called.</param>
+        </member>
+        <member name="M:CSL.Utilities.Extentions.Methods.Info(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            Use this method to log messages for production.
+            </summary>
+            <param name="value">The text to log.</param>
+            <param name="line">The line from where this method was called.</param>
+            <param name="member">The member from where this method was called.</param>
+            <param name="file">The file from where this method was called.</param>
+        </member>
+        <member name="M:CSL.Utilities.Extentions.Methods.GetIntNullable(System.Object)">
+            <summary>
+            Try to parse the provided object as nullable int.
+            </summary>
+            <param name="value">The value to parse.</param>
+            <returns>The value if 'int.TryParse' = true, null otherwise.</returns>
+        </member>
+        <member name="M:CSL.Utilities.Extentions.Methods.ThrowIfNull(System.Object,System.String,System.Object[])">
+            <summary>
+            Throws an exception if 'value' is null. The message is composed using the 'String.Format' method.
+            </summary>
+            <param name="value"></param>
+            <param name="format"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:CSL.Utilities.Extentions.Methods.ThrowIfNull(System.Object,System.String,System.Int32,System.String,System.String)">
+            <summary>
+            Throws an exception if 'value' is null..
+            </summary>
+            <param name="value">The object ot check.</param>
+            <param name="message"></param>
+            <param name="line">The line from where this method was called.</param>
+            <param name="member">The member from where this method was called.</param>
+            <param name="file">The file from where this method was called.</param>/// 
+        </member>
+        <member name="M:CSL.Utilities.Extentions.Methods.ThrowIfEmpty(System.String,System.String,System.Object[])">
+            <summary>
+            Throws an exception if the string is Empty
+            </summary>
+            <param name="value">The object to check.</param>
+            <param name="format">The error meaage in the format used by the method 'String.Format'.</param>
+            <param name="args">The argoments for the string.</param>
+        </member>
+        <member name="M:CSL.Utilities.Extentions.Methods.ThrowIfEmpty(System.String,System.String,System.Int32,System.String,System.String)">
+            <summary>
+            Throws an exception if the string is empty.
+            </summary>
+            <param name="value">The string to check.</param>
+            <param name="message">The error message.</param>
+            <param name="file">The name of the file from where this method is called.</param>
+            <param name="member">The name of the member where this method is called.</param>
+            <param name="line">The Line of the file where this method is called.</param>
+        </member>
+        <member name="M:CSL.Utilities.Extentions.Methods.Error(System.Exception,System.Int32,System.String,System.String)">
+            <summary>
+            Use this method to log messages ONLY for exceptions.
+            </summary>
+            <param name="value">The text to log.</param>
+            <param name="line">The line from where this method was called.</param>
+            <param name="member">The member from where this method was called.</param>
+            <param name="file">The file from where this method was called.</param>
+        </member>
+        <member name="M:CSL.Utilities.Extentions.Methods.GetDateTimeNullable(System.Object)">
+            <summary>
+            Try to parse the provided object as nullable DateTime.
+            </summary>
+            <param name="value">The value to parse.</param>
+            <returns>The value if 'DateTime.TryParse' = true, null otherwise.</returns>
+        </member>
+        <member name="M:CSL.Utilities.Extentions.Methods.GetLong(System.Data.SqlClient.SqlParameter,System.Int64)">
+            <summary>
+            Try to parse the value to get a 'long' number.
+            </summary>
+            <param name="NVC">The object to analyze.</param>
+            <param name="default">The default value (if parse fails).</param>
+            <returns>The valua (as long) if 'long.TryParse' is true, otherwise the default value.</returns>
+        </member>
+        <member name="M:CSL.Utilities.Extentions.Methods.MaxIndex(System.Array)">
+            <summary>
+            Providex the max index for the array. Max index is (Length - 1) for zero based array.
+            </summary>
+            <param name="value"></param>
+            <returns>value.Length - 1.</returns>
+        </member>
+        <member name="M:CSL.Utilities.Extentions.Methods.LastItem``1(``0[])">
+            <summary>
+            Return the last item of the array
+            </summary>
+            <typeparam name="T">The generic type of the array.</typeparam>
+            <param name="value">The array object.</param>
+            <returns>value[value.Length - 1];.</returns>
+        </member>
+        <member name="M:CSL.Utilities.Extentions.Methods.FirstItem``1(``0[])">
+            <summary>
+            Returns the first item of the array.
+            </summary>
+            <typeparam name="T">The generic type of the array.</typeparam>
+            <param name="value">The array object.</param>
+            <returns>value[0].</returns>
+        </member>
+        <member name="M:CSL.Utilities.Extentions.Methods.FirstItem(System.Int32[])">
+            <summary>
+            Returns the first item of the array (Overload for 'int').
+            </summary>
+            <param name="value">The array object.</param>
+            <returns>value[0].</returns>
+        </member>
+        <member name="M:CSL.Utilities.Extentions.Methods.Append``1(``0[],``0)">
+            <summary>
+            Appends an item at the end of the array.
+            </summary>
+            <typeparam name="T">The generic type of the array.</typeparam>
+            <param name="value">The array object.</param>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CSL.Utilities.Extentions.Methods.Slice``1(``0[],System.Int32,System.Int32)">
+            <summary>
+            Gets the array slice.
+            </summary>
+            <typeparam name="T">The generic type</typeparam>
+            <param name="source">The source array (the array from which 'cut the slice'.</param>
+            <param name="start">The stating index (inclusive).</param>
+            <param name="length">The number of item in the new array (the slice).</param>
+            <returns>A new array made of 'length' elements extracted from 'value' starting at 'start' (included).</returns>
+        </member>
+        <member name="M:CSL.Utilities.Extentions.Methods.Slice``1(``0[],System.Int32)">
+            <summary>
+            Gets the ramaining array starting from the index 'Start' (included).
+            </summary>
+            <typeparam name="T">The generic type</typeparam>
+            <param name="source">The source array (the array from which 'cut the slice'.</param>
+            <param name="start">The stating index (inclusive).</param>
+            <returns>A new array made of the remaining elements extracted from 'value' starting at 'start' (included).</returns>
+        </member>
+        <member name="M:CSL.Utilities.Extentions.Methods.ToBytes(System.Int32)">
+            <summary>
+            Returns an array of 4 bytes. less miningfull byte in the low index. I.E. new byte[] { 2, 1, 0, 0 } is the array for the number 257 
+            </summary>
+            <summary>
+      The summary for ToBytes.
+    </summary>
+            <param name="value">The number to convert.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CSL.Utilities.Extentions.Methods.ToBytes(System.Int64)">
+            <summary>
+            Converts a long to an array of 8 bytes.
+            </summary>
+            <param name="value">The long value to convert.</param>
+            <returns>8 bytes. Most significative digits go to the highest index: value 1 become [0 ,0, 0, 0, 0, 0, 0, 1] .</returns>
+        </member>
+        <member name="M:CSL.Utilities.Extentions.Methods.ToText(System.Byte[])">
+            <summary>
+            Encode an Array of bytes to string. 'Personal' version of 'ToString' defined only to have a common encoding place 
+            </summary>
+            <param name="bytes">The array to encode.</param>
+            <returns>Encoding.UTF8.GetString(bytes).</returns>
+        </member>
+        <member name="M:CSL.Utilities.Extentions.Methods.ToMessage(System.Array)">
+            <summary>
+            Used for debug/Log pourposes. 'Join' the array using ',' as separator
+            </summary>
+            <param name="value">The array to convert to string.</param>
+            <returns>Null if null; empty if length = 0. Otherwise the array {1, 2, 3 4} become the string "1; 2; 3, 4".</returns>
+        </member>
+        <member name="M:CSL.Utilities.Extentions.Methods.ToMessage(System.Array,System.String)">
+            <summary>
+            Used for debug/Log pourposes. 'Join' the array using ',' as separator
+            </summary>
+            <param name="value">The array to convert to string.</param>
+            <param name="separator">The separator used to join the array.</param>
+            <returns>Null if null; empty if length = 0. Otherwise the array {1, 2, 3 4} become the string "1; 2; 3, 4".</returns>
+        </member>
+        <member name="M:CSL.Utilities.Extentions.Methods.ToLong(System.Byte[])">
+            <summary>
+            Converts an array of bytes to a Long number.
+            </summary>
+            <param name="value">The array to convert. (only values ranging between 0 and 7 will be considered).</param>
+            <returns>the number (base 10) from the first 8 bytes (base 255).</returns>
+        </member>
+        <member name="M:CSL.Utilities.Extentions.Methods.GetString(System.Byte[])">
+            <summary>
+            Converts an array of bytes to string. This method is defined only to have one place (in all the solution) where the conversion is performed. 
+            ATTENTION: message to the developer. «I'm gonna make you an offer you can't refuse»: USE THIS PLEASE!-)
+            </summary>
+            <param name="bytes">The array of byte to convert.</param>
+            <returns>a string.</returns>
+        </member>
+        <member name="M:CSL.Utilities.Extentions.Methods.GetBytes(System.String)">
+            <summary>
+            Converts a string to an array of bytes. This method is defined only to have one place (in all the solution) where the conversion is performed. 
+            ATTENTION: message to the developer. «I'm gonna make you an offer you can't refuse»: USE THIS PLEASE!-)
+            </summary>
+            <param name="value">The string to convert.</param>
+            <returns>a coded array of bytes.</returns>
+        </member>
+        <member name="M:CSL.Utilities.Extentions.Methods.ToBytes(System.String)">
+            <summary>
+            Converts a string to an array of bytes. This method is defined only to have one place (in all the solution) where the conversion is performed. 
+            </summary>
+            <param name="value">The string to convert.</param>
+            <returns>a coded array of bytes.</returns>
+        </member>
+        <member name="M:CSL.Utilities.Extentions.Methods.Slice(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            Gets the array slice.
+            </summary>
+            <param name="value">The source array (the array from which 'cut the slice'.</param>
+            <param name="start">The stating index (inclusive).</param>
+            <param name="length">The number of items in the new array (the slice).</param>
+            <returns>A new array made of 'length' elements extracted from 'value' starting at 'start' (included).</returns>
+        </member>
+        <member name="M:CSL.Utilities.Extentions.Methods.Slice(System.Int32[],System.Int32,System.Int32)">
+            <summary>
+            Gets the array slice.
+            </summary>
+            <param name="value">The source array (the array from which 'cut the slice'.</param>
+            <param name="start">The stating index (inclusive).</param>
+            <param name="length">The number of items in the new array (the slice).</param>
+            <returns>A new array made of 'length' elements extracted from 'value' starting at 'start' (included).</returns>
+        </member>
+        <member name="M:CSL.Utilities.Extentions.Methods.Slice(System.String[],System.Int32,System.Int32)">
+            <summary>
+            Gets the array slice.
+            </summary>
+            <param name="value">The source array (the array from which 'cut the slice'.</param>
+            <param name="start">The stating index (inclusive).</param>
+            <param name="length">The number of items in the new array (the slice).</param>
+            <returns>A new array made of 'length' elements extracted from 'value' starting at 'start' (included).</returns>
+        </member>
+        <member name="M:CSL.Utilities.Extentions.Methods.Slice(System.Byte[],System.Int32)">
+            <summary>
+            Gets the array slice.
+            </summary>
+            <param name="value">The source array (the array from which 'cut the slice'.</param>
+            <param name="start">The stating index (inclusive).</param>
+            <returns>A new array made of all elements extracted from 'value' starting at 'start' (included) till the end.</returns>
+        </member>
+        <member name="M:CSL.Utilities.Extentions.Methods.Slice(System.String[],System.Int32)">
+            <summary>
+            Gets the array slice.
+            </summary>
+            <param name="value">The source array (the array from which 'cut the slice'.</param>
+            <param name="start">The stating index (inclusive).</param>
+            <returns>A new array made of all elements extracted from 'value' starting at 'start' (included) till the end.</returns>
+        </member>
+        <member name="M:CSL.Utilities.Extentions.Methods.GetValue(System.Collections.Specialized.NameValueCollection,System.String,System.Boolean)">
+            <summary>
+            Funzione ad uso dello sviluppatore: come NVC[name] restituisce il valore in corrispondenza della key = name
+            in più traccia un log se name è null; è empty; NVC non contiene la key name      
+            </summary>
+            <param name="NVC">La collection dove cercare l'elemento con key = name.</param>
+            <param name="name">Il nome dei key.</param>
+            <param name="throwIfNull">Throwns an exception if the value is null.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CSL.Utilities.Extentions.Methods.GetValue(System.Collections.Specialized.NameValueCollection,System.String,System.Object)">
+            <summary>
+            Funzione ad uso dello sviluppatore: come NVC[name] restituisce il valore in corrispondenza della key = name
+            Se name è null; è empty; NVC non contiene la key name restituisce il valore di default.
+            Per un comportamento analogo a NVC[name] default deve essere il valore null.
+            </summary>
+            <param name="NVC">La collection dove cercare l'elemento con key = name.</param>
+            <param name="name">Il nome dei key.</param>
+            <param name="default">Il valore da restituire quando non è possibile leggere NVC.</param>
+            <returns>NVC[name] quando possibile; default altrimenti.</returns>
+        </member>
+        <member name="M:CSL.Utilities.Extentions.Methods.GetString(System.Collections.Specialized.NameValueCollection,System.String)">
+            <summary>
+            Return the element with key = name. Throws an exception if null.
+            </summary>
+            <param name="NVC">The nameValueCollection object.</param>
+            <param name="name">The name of the key.</param>
+            <returns>The value for the name in the NameValueCollection.</returns>
+        </member>
+        <member name="M:CSL.Utilities.Extentions.Methods.GetString(System.Collections.Specialized.NameValueCollection,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Tries to get the value for the provided name in the config file.
+            </summary>
+            <param name="NVC">The collection of keys and values.</param>
+            <param name="name">The name of the key.</param>
+            <param name="throwIfNull">An Exception will be raisen if the NVC does not contains the key.</param>
+            <param name="throwIfEmpty">An Exception will be raisen if the the value is emty for the name in the NVC.</param>
+            <returns>The valueue in the config for the provided name.</returns>
+        </member>
+        <member name="M:CSL.Utilities.Extentions.Methods.GetString(System.Collections.Specialized.NameValueCollection,System.String,System.String)">
+            <summary>
+            Tries to get the value for the provided name in the config file.
+            </summary>
+            <param name="NVC">The collection of keys and values.</param>
+            <param name="name">The name of the key.</param>
+            <param name="default">The default return value, if there isn.' any key with the name supplied.</param>
+            <returns>The valueue in the config for the provided name.</returns>
+        </member>
+        <member name="M:CSL.Utilities.Extentions.Methods.GetString(System.Collections.Specialized.NameValueCollection,System.String,System.String,System.Object[])">
+            <summary>
+            Tries to get the value for the provided name in the config file.
+            </summary>
+            <param name="NVC">The collection of keys and values.</param>
+            <param name="name">The name of the key.</param>
+            <param name="format">The error message in the format used by 'String.Format'.</param>
+            <param name="args">An object array that contains zero or more objects to format.</param>
+            <returns>The value in the config for the provided name.</returns>
+        </member>
+        <member name="M:CSL.Utilities.Extentions.Methods.GetInt(System.Collections.Specialized.NameValueCollection,System.String,System.Int32[])">
+            <summary>
+            Tries to get the value for the provided name in the nameValueCollection.
+            </summary>
+            <param name="NVC">The collection of keys and values.</param>
+            <param name="name">The name of the key.</param>
+            <param name="default">The default value if NVC does not contains the name'.</param>
+            <returns>The value in the NVC for the provided name.</returns>
+        </member>
+        <member name="M:CSL.Utilities.Extentions.Methods.GetInt(System.Collections.Specialized.NameValueCollection,System.String)">
+            <summary>
+            Tries to get the value for the provided name in the nameValueCollection.
+            </summary>
+            <param name="NVC">The collection of keys and values.</param>
+            <param name="name">The name of the key.</param>
+            <returns>The value in the NVC for the provided name. Throws an exception if not found.</returns>
+        </member>
+        <member name="M:CSL.Utilities.Extentions.Methods.GetDouble(System.Collections.Specialized.NameValueCollection,System.String,System.Double)">
+            <summary>
+            Tries to get the value for the provided name in the nameValueCollection.
+            </summary>
+            <param name="NVC">The collection of keys and values.</param>
+            <param name="name">The name of the key.</param>
+            <param name="default">The default value if NVC does not contains the name'.</param>
+            <returns>The value in the NVC for the provided name.</returns>
+        </member>
+        <member name="M:CSL.Utilities.Extentions.Methods.GetInt(System.Collections.Specialized.NameValueCollection,System.String,System.Int32)">
+            <summary>
+            Tries to get the value for the provided name in the nameValueCollection.
+            </summary>
+            <param name="NVC">The collection of keys and values.</param>
+            <param name="name">The name of the key.</param>
+            <param name="default">The default value if NVC does not contains the name'.</param>
+            <returns>The value in the NVC for the provided name.</returns>
+        </member>
+        <member name="M:CSL.Utilities.Extentions.Methods.GetLong(System.Collections.Specialized.NameValueCollection,System.String,System.Int64)">
+            <summary>
+            Tries to get the value for the provided name in the nameValueCollection.
+            </summary>
+            <param name="NVC">The collection of keys and values.</param>
+            <param name="name">The name of the key.</param>
+            <param name="default">The default value if NVC does not contains the name'.</param>
+            <returns>The value in the NVC for the provided name.</returns>
+        </member>
+        <member name="M:CSL.Utilities.Extentions.Methods.GetBool(System.Collections.Specialized.NameValueCollection,System.String,System.Boolean)">
+            <summary>
+            Tries to get the value for the provided name in the nameValueCollection.
+            </summary>
+            <param name="NVC">The collection of keys and values.</param>
+            <param name="name">The name of the key.</param>
+            <param name="default">The default value if NVC does not contains the name'.</param>
+            <returns>The value in the NVC for the provided name.</returns>
+        </member>
+        <member name="T:CSL.Logger">
+            <summary>
+            This class it is only an infrastructure made to decouple the logging tools with every CSL project. 
+            To effectively write log this class needs a true logger provided by the 'SetLoggr' method.
+            </summary>
+        </member>
+        <member name="F:CSL.Logger.SkipDebug">
+            <summary>
+            If true 'Debug' will not be traced.
+            </summary>
+        </member>
+        <member name="F:CSL.Logger.SkipAll">
+            <summary>
+            If true 'only broadcast messages will be displayed.
+            </summary>
+        </member>
+        <member name="F:CSL.Logger._Logger">
+            <summary>
+            The object effectively used to execute the log. By default is a 'Fake' log (an empty class that does not writes anything). To assigne a true Log object use the method 'SetLogger'. 
+            Cannot be public to avoid, for example: Logger._Logger.Debug(...).
+            The correct way to use this class is, for example: Logger.Debug(...).
+            </summary>
+        </member>
+        <member name="M:CSL.Logger.SetLogger(CSL.ILog)">
+            <summary>
+            Assign the provided logger to this class (CSL.Logger). By default this class uses a 'fake' logger that does logs nothing except calling the 'OnBroadcast' event.
+            After this assignment, every log will be managed by the provided class.
+            </summary>
+            <param name="logger">Any kind of 'eqipment' (logger) that inherits from 'CSL.Shared.ILog'.</param>
+        </member>
+        <member name="M:CSL.Logger.GetLogger">
+            <summary>
+            Gives back the 'Logger' currently used. This method is defined to avoid direct access to this 'logger'
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CSL.Logger.Write(System.Int64,System.String,CSL.Logger.Levels,System.Int32,System.String,System.String)">
+            <summary>
+            Writes one of the log method based on level.
+            </summary>
+            <param name="token">A number related with an incoming 'Signal'.  Used to group together all the logs for the same 'Signal'.</param>
+            <param name="text">The text to log.</param>
+            <param name="level">Specifies which kind of log {Debug; Warn; ...}</param>
+            <param name="file">The name of the file from where this method is called.</param>
+            <param name="member">Used for debug pourposes: the name of the member from which the log comes.</param>
+            <param name="line">The Line of the file where this method is called.</param>
+        </member>
+        <member name="M:CSL.Logger.Write(System.Int64,CSL.Logger.Levels,System.Int32,System.String,System.String)">
+            <summary>
+            Writes one of the log method based on level.
+            </summary>
+            <param name="token">A number related with an incoming 'Signal'.  Used to group together all the logs for the same 'Signal'.</param>
+            <param name="level">Specifies which kind of log {Debug; Warn; ...}</param>
+            <param name="file">The name of the file from where this method is called.</param>
+            <param name="member">Used for debug pourposes: the name of the member from which the log comes.</param>
+            <param name="line">The Line of the file where this method is called.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CSL.Logger.Write(System.Int64,System.Exception,System.Int32,System.String,System.String)">
+            <summary>
+            The same as Error(). (defined only for consinstency.)
+            </summary>
+            <param name="token">A number related with an incoming 'Signal'.  Used to group together all the logs for the same 'Signal'.</param>
+            <param name="se">The exception raised during the creation of this object.</param>
+            <param name="line">The Line of the file where this method is called.</param>
+            <param name="member">Used for debug pourposes: the name of the member from which the log comes.</param>
+            <param name="file">The name of the file from where this method is called.</param>
+        </member>
+        <member name="M:CSL.Logger.Broadcast(System.Int64,System.String,CSL.Logger.Levels,System.Int32,System.String,System.String)">
+            <summary>
+            Calls the 'pseudo event' OnBroadcast
+            </summary>
+            <param name="token">A number related with an incoming 'Signal'.  Used to group together all the logs for the same 'Signal'.</param>
+            <param name="text">The text to log.</param>
+            <param name="level">Specifies which kind of log {Debug; Warn; ...}</param>
+            <param name="file">The name of the file from where this method is called.</param>
+            <param name="member">Used for debug pourposes: the name of the member from which the log comes.</param>
+            <param name="line">The Line of the file where this method is called.</param>
+        </member>
+        <member name="M:CSL.Logger.Broadcast(System.String,CSL.Logger.Levels,System.Int32,System.String,System.String)">
+            <summary>
+            Calls the 'pseudo event' OnBroadcast
+            </summary>
+            <param name="text">The text to log.</param>
+            <param name="level">Specifies which kind of log {Debug; Warn; ...}</param>
+            <param name="file">The name of the file from where this method is called.</param>
+            <param name="member">Used for debug pourposes: the name of the member from which the log comes.</param>
+            <param name="line">The Line of the file where this method is called.</param>
+        </member>
+        <member name="M:CSL.Logger.Debug(System.Int64,System.String,System.Int32,System.String,System.String)">
+            <summary>
+            Logs a 'Debug in the log file if skepDebug (in config file) is false.
+            </summary>
+            <param name="token">A number related with an incoming 'Signal'.  Used to group together all the logs for the same 'Signal'.</param>
+            <param name="text">The text to log.</param>
+            <param name="file">The name of the file from where this method is called.</param>
+            <param name="member">The name of the member where this method is called.</param>
+            <param name="line">The Line of the file where this method is called.</param>
+        </member>
+        <member name="M:CSL.Logger.Debug(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            Logs a 'Debug in the log file if skepDebug (in config file) is false.
+            </summary>
+            <param name="text">The text to log.</param>
+            <param name="file">The name of the file from where this method is called.</param>
+            <param name="member">The name of the member where this method is called.</param>
+            <param name="line">The Line of the file where this method is called.</param>
+        </member>
+        <member name="M:CSL.Logger.Debug(System.Int64,System.Int32,System.String,System.String)">
+            <summary>
+            Logs a 'Debug in the log file if skepDebug (in config file) is false.
+            </summary>
+            <param name="token">A number related with an incoming 'Signal'.  Used to group together all the logs for the same 'Signal'.</param>
+            <param name="file">The name of the file from where this method is called.</param>
+            <param name="member">The name of the member where this method is called.</param>
+            <param name="line">The Line of the file where this method is called.</param>
+            <returns>A 'FormatClass' with the method 'Format' used to compose the text to log like the 'String.Format'</returns>
+        </member>
+        <member name="M:CSL.Logger.Debug(System.Int32,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="file">The name of the file from where this method is called.</param>
+            <param name="member">The name of the member where this method is called.</param>
+            <param name="line">The Line of the file where this method is called.</param>
+            <returns>A 'FormatClass' with the method 'Format' used to compose the text to log like the 'String.Format'</returns>
+        </member>
+        <member name="M:CSL.Logger.Info(System.Int64,System.String,System.Int32,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="token">A number related with an incoming 'Signal'.  Used to group together all the logs for the same 'Signal'.</param>
+            <param name="text">The text to log.</param>
+            <param name="file">The name of the file from where this method is called.</param>
+            <param name="member">The name of the member where this method is called.</param>
+            <param name="line">The Line of the file where this method is called.</param>
+        </member>
+        <member name="M:CSL.Logger.Info(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            Logs the provided text. DEBUG is the associated level.
+            </summary>
+            <param name="text">The text to log.</param>
+            <param name="file">The name of the file from where this method is called.</param>
+            <param name="member">The name of the member where this method is called.</param>
+            <param name="line">The Line of the file where this method is called.</param>
+        </member>
+        <member name="M:CSL.Logger.Info(System.Int64,System.Int32,System.String,System.String)">
+            <summary>
+            Use this overload to 'Format' a message like the method 'String.Format'. The sintax is: Info(long token).Format(string format, params object[] args).
+            </summary>
+            <param name="token">A number related with an incoming 'Signal'.  Used to group together all the logs for the same 'Signal'.</param>
+            <param name="file">The name of the file from where this method is called.</param>
+            <param name="member">The name of the member where this method is called.</param>
+            <param name="line">The Line of the file where this method is called.</param>
+            <returns>A 'FormatClass' with the method 'Format' used to compose the text to log like the 'String.Format'</returns>
+        </member>
+        <member name="M:CSL.Logger.Info(System.Int32,System.String,System.String)">
+            <summary>
+            Use this overload to 'Format' a message like the method 'System.String.Format'. The sintax is: Info().Format(string format, params object[] args).
+            </summary>
+            <param name="line">The Line of the file where this method is called.</param>
+            <param name="member">Used for debug pourposes: the name of the member from which the log comes.</param>
+            <param name="file">The name of the file from where this method is called.</param>
+            <returns>A 'FormatClass' with the method 'Format' used to compose the text to log like the 'String.Format'</returns>
+        </member>
+        <member name="M:CSL.Logger.Warn(System.Int64,System.String,System.Int32,System.String,System.String)">
+            <summary>
+            Use this method to log messages for any kind of not correct condition .
+            </summary>
+            <param name="token">A number related with an incoming 'Signal'.  Used to group together all the logs for the same 'Signal'.</param>
+            <param name="text">The text to log.</param>
+            <param name="file">The name of the file from where this method is called.</param>
+            <param name="member">The name of the member where this method is called.</param>
+            <param name="line">The Line of the file where this method is called.</param>
+        </member>
+        <member name="M:CSL.Logger.Warn(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            Use this method to log messages for any kind of not correct condition .
+            </summary>
+            <param name="text">The text to log.</param>
+            <param name="file">The name of the file from where this method is called.</param>
+            <param name="member">The name of the member where this method is called.</param>
+            <param name="line">The Line of the file where this method is called.</param>
+        </member>
+        <member name="M:CSL.Logger.Warn(System.Int64,System.Int32,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="token">A number related with an incoming 'Signal'.  Used to group together all the logs for the same 'Signal'.</param>
+            <param name="file">The name of the file from where this method is called.</param>
+            <param name="member">The name of the member where this method is called.</param>
+            <param name="line">The Line of the file where this method is called.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CSL.Logger.Warn(System.Int32,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="file">The name of the file from where this method is called.</param>
+            <param name="member">The name of the member where this method is called.</param>
+            <param name="line">The Line of the file where this method is called.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CSL.Logger.Error(System.Int64,System.Exception,System.Int32,System.String,System.String)">
+            <summary>
+            Use this method to log messages ONLY for exceptions.
+            </summary>
+            <param name="token">A number related with an incoming 'Signal'.  Used to group together all the logs for the same 'Signal'.</param>>
+            <param name="se">The exception to log.</param>
+            <param name="line">The line from where this method was called.</param>
+            <param name="member">The member from where this method was called.</param>
+            <param name="file">The file from where this method was called.</param>
+        </member>
+        <member name="M:CSL.Logger.Error(System.Exception,System.Int32,System.String,System.String)">
+            <summary>
+            Use this method to log messages ONLY for exceptions.
+            </summary>
+            <param name="se">The exception to log.</param>
+            <param name="line">The line from where this method was called.</param>
+            <param name="member">The member from where this method was called.</param>
+            <param name="file">The file from where this method was called.</param>
+        </member>
+        <member name="M:CSL.Logger.Fatal(System.Int64,System.String,System.Int32,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="token">A number related with an incoming 'Signal'.  Used to group together all the logs for the same 'Signal'.</param>
+            <param name="text">The text to log.</param>
+            <param name="file">The name of the file from where this method is called.</param>
+            <param name="member">The name of the member where this method is called.</param>
+            <param name="line">The Line of the file where this method is called.</param>
+        </member>
+        <member name="M:CSL.Logger.Fatal(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="text">The text to log.</param>
+            <param name="file">The name of the file from where this method is called.</param>
+            <param name="member">The name of the member where this method is called.</param>
+            <param name="line">The Line of the file where this method is called.</param>
+        </member>
+        <member name="M:CSL.Logger.Fatal(System.Int64,System.Int32,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="token">A number related with an incoming 'Signal'.  Used to group together all the logs for the same 'Signal'.</param>
+            <param name="file">The name of the file from where this method is called.</param>
+            <param name="member">The name of the member where this method is called.</param>
+            <param name="line">The Line of the file where this method is called.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CSL.Logger.Fatal(System.Int32,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="file">The name of the file from where this method is called.</param>
+            <param name="member">The name of the member where this method is called.</param>
+            <param name="line">The Line of the file where this method is called.</param>
+            <returns></returns>
+        </member>
+        <member name="E:CSL.Logger.OnBroadcast">
+            <summary>
+            is a static event can be bind also without any instance object. is a 'global' event.
+            </summary>
+        </member>
+        <member name="T:CSL.Logger.Levels">
+            <summary>
+            Enumeration of the possible types of log (method)
+            </summary>
+        </member>
+        <member name="F:CSL.Logger.Levels.DEBUG">
+            <summary>
+            This is the most verbose logging level (maximum volume setting). Debug should be out-of-bounds for a production system and used only for development and testing.
+            </summary>
+        </member>
+        <member name="F:CSL.Logger.Levels.INFO">
+            <summary>
+            The 'Info' level is typically used to output information that is useful to the running and management of your system (production). 'Info' would also be the level used to log Entry and Exit points in key areas of your application. However, you may choose to add more entry and exit points at Debug level for more granularity during development and testing.
+            </summary>
+        </member>
+        <member name="F:CSL.Logger.Levels.WARN">
+            <summary>
+            Warning is often used for handled 'exceptions' or other important log events. For example, if your application requires a configuration setting but has a default in case the setting is missing, then the Warning level should be used to log the missing configuration setting.
+            </summary>
+        </member>
+        <member name="F:CSL.Logger.Levels.ERROR">
+            <summary>
+            Error is used to log all unhandled exceptions. This is typically logged inside a catch block at the boundary of your application.
+            </summary>
+        </member>
+        <member name="F:CSL.Logger.Levels.FATAL">
+            <summary>
+            Fatal is reserved for special exceptions/conditions where it is imperative that you can quickly pick out these events. Fatal should to be used early in an application's development. It's usually only with experience it is possible identify situations worthy of the FATAL moniker experience do specific events become worth of promotion to Fatal. After all, an error's an error.
+            </summary>
+        </member>
+        <member name="T:CSL.ILog">
+            <summary>
+            Every class used to log with the 'CSL.Logger.XXX... MUST inherit this interface.
+            </summary>
+        </member>
+        <member name="M:CSL.ILog.Debug(System.Int64,System.String,System.Int32,System.String,System.String)">
+            <summary>
+            Use this method to log messages good during the development process.
+            </summary>
+            <param name="token">A number related with an incoming 'Signal'.  Used to group together all the logs for the same 'Signal'.</param>>
+            <param name="text">The text to log.</param>
+            <param name="line">The line from where this method was called.</param>
+            <param name="member">The member from where this method was called.</param>
+            <param name="file">The file from where this method was called.</param>
+        </member>
+        <member name="M:CSL.ILog.Fatal(System.Int64,System.String,System.Int32,System.String,System.String)">
+            <summary>
+            Use this method to log very exceptional messages .
+            </summary>
+            <param name="token">A number related with an incoming 'Signal'.  Used to group together all the logs for the same 'Signal'.</param>>
+            <param name="text">The text to log.</param>
+            <param name="line">The line from where this method was called.</param>
+            <param name="member">The member from where this method was called.</param>
+            <param name="file">The file from where this method was called.</param>
+        </member>
+        <member name="M:CSL.ILog.Info(System.Int64,System.String,System.Int32,System.String,System.String)">
+            <summary>
+            Use this method to log messages for production.
+            </summary>
+            <param name="token">A number related with an incoming 'Signal'.  Used to group together all the logs for the same 'Signal'.</param>>
+            <param name="text">The text to log.</param>
+            <param name="line">The line from where this method was called.</param>
+            <param name="member">The member from where this method was called.</param>
+            <param name="file">The file from where this method was called.</param>
+        </member>
+        <member name="M:CSL.ILog.Warn(System.Int64,System.String,System.Int32,System.String,System.String)">
+            <summary>
+            Use this method to log messages for any kind of not correct condition .
+            </summary>
+            <param name="token">A number related with an incoming 'Signal'.  Used to group together all the logs for the same 'Signal'.</param>>
+            <param name="text">The text to log.</param>
+            <param name="line">The line from where this method was called.</param>
+            <param name="member">The member from where this method was called.</param>
+            <param name="file">The file from where this method was called.</param>
+        </member>
+        <member name="M:CSL.ILog.Error(System.Int64,System.Exception,System.Int32,System.String,System.String)">
+            <summary>
+            Use this method to log messages ONLY for exceptions.
+            </summary>
+            <param name="token">A number related with an incoming 'Signal'.  Used to group together all the logs for the same 'Signal'.</param>>
+            <param name="se">The exception to log.</param>
+            <param name="line">The line from where this method was called.</param>
+            <param name="member">The member from where this method was called.</param>
+            <param name="file">The file from where this method was called.</param>
+        </member>
+        <member name="T:CSL.Logger.FormatDelegate">
+            <summary>
+            Defined only fro the class 'FormatClass'
+            </summary>
+            <param name="token">A number related with an incoming 'Signal'.  Used to group together all the logs for the same 'Signal'.</param>
+            <param name="text">The text to log.</param>
+            <param name="file">The name of the file from where this method is called.</param>
+            <param name="member">The name of the member where this method is called.</param>
+            <param name="line">The Line of the file where this method is called.</param>
+        </member>
+        <member name="T:CSL.Logger.FormatClass">
+            <summary>
+            This class is a 'trick' necessary because is not possible have optional parameter (file, member and line) and a param array. this are necessary for the 'Format' method.
+            </summary>
+        </member>
+        <member name="F:CSL.Logger.FormatClass.CallBack">
+            <summary>
+            The callback used to log the message.
+            </summary>
+        </member>
+        <member name="M:CSL.Logger.FormatClass.#ctor(CSL.Logger.FormatDelegate,System.Int64,System.Int32,System.String,System.String)">
+            <summary>
+            Ctor. Calls the overlad method and assign 'token'
+            </summary>
+            <param name="callBack">The callback function used to log one of {Debug; Info; Warn; Fatal}</param>
+            <param name="token">A number related with an incoming 'Signal'.  Used to group together all the logs for the same 'Signal'.</param>
+            <param name="file">The name of the file from where this method is called.</param>
+            <param name="member">The name of the member where this method is called.</param>
+            <param name="line">The Line of the file where this method is called.</param>
+        </member>
+        <member name="M:CSL.Logger.FormatClass.#ctor(CSL.Logger.FormatDelegate,System.Int32,System.String,System.String)">
+            <summary>
+            CTor. Assign the parameter to the inner fields.
+            </summary>
+            <param name="callBack">The callback function used to log one of {Debug; Info; Warn; Fatal}</param>
+            <param name="file">The name of the file from where this method is called.</param>
+            <param name="member">The name of the member where this method is called.</param>
+            <param name="line">The Line of the file where this method is called.</param>
+        </member>
+        <member name="M:CSL.Logger.FormatClass.#ctor(CSL.Logger.FormatDelegate,System.Int64,CSL.Logger.Levels,System.Int32,System.String,System.String)">
+            <summary>
+            CTor. Assign the parameter to the inner fields.
+            </summary>
+            <param name="callBack">The callback function used to log one of {Debug; Info; Warn; Fatal}</param>
+            <param name="token">A number related with an incoming 'Signal'.  Used to group together all the logs for the same 'Signal'.</param>
+            <param name="level">Specifies which kind of log {Debug; Warn; ...}</param>
+            <param name="file">The name of the file from where this method is called.</param>
+            <param name="member">The name of the member where this method is called.</param>
+            <param name="line">The Line of the file where this method is called.</param>
+        </member>
+        <member name="M:CSL.Logger.FormatClass.Format(System.String,System.Object[])">
+            <summary>
+            Logs the message formatting the text exactly as 'String.Format'.
+            </summary>
+            <param name="format"></param>
+            <param name="args"></param>
+        </member>
+        <member name="P:CSL.Logger.FormatClass.Token">
+            <summary>
+            A number related with an incoming 'Signal'.  Used to group together all the logs for the same 'Signal'.
+            </summary>
+        </member>
+        <member name="P:CSL.Logger.FormatClass.File">
+            <summary>
+            The name of the file from where this method is called.
+            </summary>
+        </member>
+        <member name="P:CSL.Logger.FormatClass.Member">
+            <summary>
+            The name of the member where this method is called.
+            </summary>
+        </member>
+        <member name="P:CSL.Logger.FormatClass.Line">
+            <summary>
+            The Line of the file where this method is called.
+            </summary>
+        </member>
+        <member name="T:CSL.Logger.OnBroadcastHandler">
+            <summary>
+            
+            </summary>
+            <param name="token">A number related with an incoming 'Signal'.  Used to group together all the logs for the same 'Signal'.</param>
+            <param name="text">The text to log.</param>
+            <param name="level">Specifies which kind of log {Debug; Warn; ...}</param>
+            <param name="file">The name of the file from where this method is called.</param>
+            <param name="member">The name of the member where this method is called.</param>
+            <param name="line">The Line of the file where this method is called.</param>
+        </member>
+        <member name="T:CSL.Utilities.Tools">
+            <summary>
+            Some simple tool
+            </summary>
+        </member>
+        <member name="T:CSL.Shared.Tools">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CSL.Shared.Tools.GetLog4NetRoot(System.String)">
+            <summary>
+            Gets the log4Net root from the config file.
+            </summary>
+            <param name="appenderName">The namer of the appender used.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CSL.Shared.Tools.openFileDialog(System.String,System.String,System.String)">
+            <summary>
+            open a 'File dialog' window and returns the full file name of the selected file.
+            </summary>
+            <param name="root"></param>
+            <param name="filter"></param>
+            <param name="title"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CSL.Shared.Tools.ShowWithEditor(System.String)">
+            <summary>
+            Open the file with the editor specified in the config file.
+            </summary>
+            <param name="fileName"></param>
+        </member>
+        <member name="M:CSL.Shared.Tools.ShowWithBrowser(System.String)">
+            <summary>
+            Open the file with the default browser.
+            </summary>
+            <param name="fileName">The full file name.</param>
+        </member>
+        <member name="M:CSL.Shared.Tools.ShowWithEditor(System.String,System.String)">
+            <summary>
+            Open the file with the provided (name) browser.
+            </summary>
+            <param name="fileName">The full file name.</param>
+            <param name="editor">The application name of the choosen editor.</param>
+        </member>
+        <member name="M:CSL.Shared.Tools.GetEditor">
+            <summary>
+            Retrives the value for the choosen editor from the config file.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CSL.Shared.Tools.ShowWithNotepadpp(System.String)">
+            <summary>
+            shows a file using Notepad pluss pluss.
+            </summary>
+            <param name="fileName">The full file name.</param>
+        </member>
+        <member name="M:CSL.Shared.Tools.PublishVersion">
+            <summary>
+            Provide a string with information about the Binary. 
+            </summary>
+            <returns>Major, Minor, Build, Revision or 'GetLastWriteTime' of the current binary.</returns>
+        </member>
+        <member name="P:CSL.Shared.Tools.IsProduction">
+            <summary>
+            Check if the current machine is registered as Production server.
+            This is a "mirror" value. It is Not(IsDev)
+            </summary>
+        </member>
+        <member name="P:CSL.Shared.Tools.IsDev">
+            <summary>
+            Check if the current machine is registered as Developmet machine.
+            Ech machine different from 
+            CSLLT094: Vincenzo S.
+            CSLLT117: Priya G.
+            CSLLT061: Ravi G.
+            iws a 'Production Server'
+            </summary>
+        </member>
+        <member name="P:CSL.Shared.Tools.IsCriticalMode">
+            <summary>
+            Binary code in a "critical state" if it is compiled in "Debug" mode but is on a not Development machine.
+            </summary>
+        </member>
+        <member name="P:CSL.Shared.Tools.Mode">
+            <summary>
+            A string. "Debug" if the binary is in IsDebugMode, "Release" otherwise.
+            </summary>
+        </member>
+        <member name="P:CSL.Shared.Tools.IsDebugMode">
+            <summary>
+            Useing the conditional compilation: "#if DEBUG return true #else return false";
+            </summary>
+        </member>
+        <member name="T:CSL.Shared.Tools.Base64">
+            <summary>
+            Provides some base64 conversions.
+            </summary>
+        </member>
+        <member name="M:CSL.Shared.Tools.Base64.Decode(System.String)">
+            <summary>
+            Convert a string coded with 'Base64' to an uncoded string (uman readable) using 'Convert.FromBase64String'.
+            </summary>
+            <param name="text">The text to decode. If 'text = SGVsbG8gd29yZA==' will return 'Hello word'.</param>
+            <returns>The decoded text: if 'text = SGVsbG8gd29yZA==' will return 'Hello word'.</returns>
+        </member>
+        <member name="M:CSL.Shared.Tools.Base64.Decode(System.Byte[])">
+            <summary>
+            Convert an array of bytes, to an uncoded string (uman readable) using 'Convert.FromBase64String'.
+            </summary>
+            <param name="bytes">The text (in the format od bytes array) to decode.</param>
+            <returns>The decoded text: if 'text = SGVsbG8gd29yZA==' will return 'Hello word'.</returns>
+        </member>
+        <member name="M:CSL.Shared.Tools.Base64.Encode(System.String)">
+            <summary>
+            Convert an uman readable string into a new string coded with 'Base64' using 'Convert.FromBase64String'.
+            </summary>
+            <param name="text">The text to convert. If 'text = =='Hello word' will return 'SGVsbG8gd29yZA'.</param>
+            <returns>The encoded text: if 'text = 'Hello word' will return 'SGVsbG8gd29yZA=='.</returns>
+        </member>
+        <member name="T:Shared.Crc16">
+            <summary>
+            some CRC 16 methods
+            </summary>
+        </member>
+        <member name="T:Shared.Crc32">
+            <summary>
+            Performs 32-bit reversed cyclic redundancy checks.
+            </summary>
+        </member>
+        <member name="F:Shared.Crc32.s_generator">
+            <summary>
+            Generator polynomial (modulo 2) for the reversed CRC32 algorithm. 
+            </summary>
+        </member>
+        <member name="M:Shared.Crc32.#ctor">
+            <summary>
+            Creates a new instance of the Crc32 class.
+            </summary>
+        </member>
+        <member name="M:Shared.Crc32.Get``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Calculates the checksum of the byte stream.
+            </summary>
+            <param name="byteStream">The byte stream to calculate the checksum for.</param>
+            <returns>A 32-bit reversed checksum.</returns>
+        </member>
+        <member name="F:Shared.Crc32.m_checksumTable">
+            <summary>
+            Contains a cache of calculated checksum chunks.
+            </summary>
+        </member>
+        <member name="T:CSL.Utilities.Methods">
+            <summary>
+            Collection of Utility methods
+            </summary>
+        </member>
+        <member name="M:CSL.Utilities.Methods.Bytes2Number(System.Byte,System.Byte[])">
+            <summary>
+            Converts an array of bytes in long.
+            </summary>
+            <param name="length"></param>
+            <param name="bytes"></param>
+            <returns>array of bytes.</returns>
+        </member>
+        <member name="M:CSL.Utilities.Methods.Int642Bytes(System.Int64)">
+            <summary>
+            Returns an array of 8 bytes. less miningfull byte in the low index. I.E. new byte[] { 2, 1, 0, 0, 0, 0, 0, 0 } is the array for the number 257 
+            </summary>
+            <param name="value">The number to convert.</param>
+            <returns>array of 8 bytes.</returns>
+        </member>
+        <member name="M:CSL.Utilities.Methods.Int2Bytes(System.Int32)">
+            <summary>
+            Returns an array of 4 bytes. less miningfull byte in the low index. 
+            </summary>
+            <param name="value">The number to convert.</param>
+            <returns>array of 4 bytes.</returns>
+        </member>
+        <member name="M:CSL.Utilities.Methods.Long2Bytes(System.Int64)">
+            <summary>
+            Returns an array of 8 bytes. less miningfull byte in the low index. 
+            </summary>
+            <param name="value">The number to convert.</param>
+            <returns>array of 8 bytes.</returns>
+        </member>
+        <member name="M:CSL.Utilities.Methods.Bytes2Int(System.Byte[])">
+            <summary>
+            Converts an array of 4 bytes in int.
+            </summary>
+            <param name="bytes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CSL.Utilities.Methods.Bytes2Long(System.Byte[])">
+            <summary>
+            Converts an array of 8 bytes in int.
+            </summary>
+            <param name="bytes"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

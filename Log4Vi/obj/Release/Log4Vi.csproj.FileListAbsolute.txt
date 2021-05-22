@@ -1,0 +1,8 @@
+C:\Vi\Code\C#\Raffaele\Log4CSL\obj\Release\Log4Vi.csprojResolveAssemblyReference.cache
+C:\Vi\Code\C#\Raffaele\Log4CSL\bin\Release\Log4CSL.dll
+C:\Vi\Code\C#\Raffaele\Log4CSL\bin\Release\Log4CSL.pdb
+C:\Vi\Code\C#\Raffaele\Log4CSL\bin\Release\log4net.dll
+C:\Vi\Code\C#\Raffaele\Log4CSL\bin\Release\Vi.dll
+C:\Vi\Code\C#\Raffaele\Log4CSL\bin\Release\Vi.pdb
+C:\Vi\Code\C#\Raffaele\Log4CSL\obj\Release\Log4CSL.dll
+C:\Vi\Code\C#\Raffaele\Log4CSL\obj\Release\Log4CSL.pdb

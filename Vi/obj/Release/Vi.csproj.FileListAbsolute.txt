@@ -1,0 +1,7 @@
+C:\Vi\Code\C#\Raffaele\Vi\bin\Release\Vi.dll
+C:\Vi\Code\C#\Raffaele\Vi\bin\Release\Vi.pdb
+C:\Vi\Code\C#\Raffaele\Vi\obj\Release\Vi.List4Vi.resources
+C:\Vi\Code\C#\Raffaele\Vi\obj\Release\Vi.Properties.Resources.resources
+C:\Vi\Code\C#\Raffaele\Vi\obj\Release\Vi.csproj.GenerateResource.Cache
+C:\Vi\Code\C#\Raffaele\Vi\obj\Release\Vi.dll
+C:\Vi\Code\C#\Raffaele\Vi\obj\Release\Vi.pdb

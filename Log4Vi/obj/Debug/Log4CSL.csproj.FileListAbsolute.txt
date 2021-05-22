@@ -1,0 +1,29 @@
+C:\Vi\Code\c#\DualComConnected\Log4CSL\obj\Debug\Log4CSL.csprojResolveAssemblyReference.cache
+C:\Vi\Code\c#\DualComConnected\Log4CSL\bin\Debug\Log4CSL.dll
+C:\Vi\Code\c#\DualComConnected\Log4CSL\bin\Debug\Log4CSL.pdb
+C:\Vi\Code\c#\DualComConnected\Log4CSL\bin\Debug\CSL.dll
+C:\Vi\Code\c#\DualComConnected\Log4CSL\bin\Debug\log4net.dll
+C:\Vi\Code\c#\DualComConnected\Log4CSL\bin\Debug\Shared.dll
+C:\Vi\Code\c#\DualComConnected\Log4CSL\bin\Debug\CSL.pdb
+C:\Vi\Code\c#\DualComConnected\Log4CSL\bin\Debug\CSL.xml
+C:\Vi\Code\c#\DualComConnected\Log4CSL\bin\Debug\Shared.pdb
+C:\Vi\Code\c#\DualComConnected\Log4CSL\obj\Debug\Log4CSL.dll
+C:\Vi\Code\c#\DualComConnected\Log4CSL\obj\Debug\Log4CSL.pdb
+C:\Vi\Code\c#\DualComConnected - Copy\Log4CSL\bin\Debug\Log4CSL.dll
+C:\Vi\Code\c#\DualComConnected - Copy\Log4CSL\bin\Debug\Log4CSL.pdb
+C:\Vi\Code\c#\DualComConnected - Copy\Log4CSL\bin\Debug\CSL.dll
+C:\Vi\Code\c#\DualComConnected - Copy\Log4CSL\bin\Debug\log4net.dll
+C:\Vi\Code\c#\DualComConnected - Copy\Log4CSL\bin\Debug\CSL.pdb
+C:\Vi\Code\c#\DualComConnected - Copy\Log4CSL\bin\Debug\CSL.xml
+C:\Vi\Code\c#\DualComConnected - Copy\Log4CSL\obj\Debug\Log4CSL.csprojResolveAssemblyReference.cache
+C:\Vi\Code\c#\DualComConnected - Copy\Log4CSL\obj\Debug\Log4CSL.dll
+C:\Vi\Code\c#\DualComConnected - Copy\Log4CSL\obj\Debug\Log4CSL.pdb
+C:\Vi\Code\c#\DCCV2\Log4CSL\bin\Debug\Log4CSL.dll
+C:\Vi\Code\c#\DCCV2\Log4CSL\bin\Debug\Log4CSL.pdb
+C:\Vi\Code\c#\DCCV2\Log4CSL\bin\Debug\CSL.dll
+C:\Vi\Code\c#\DCCV2\Log4CSL\bin\Debug\log4net.dll
+C:\Vi\Code\c#\DCCV2\Log4CSL\bin\Debug\CSL.pdb
+C:\Vi\Code\c#\DCCV2\Log4CSL\bin\Debug\CSL.xml
+C:\Vi\Code\c#\DCCV2\Log4CSL\obj\Debug\Log4CSL.csprojResolveAssemblyReference.cache
+C:\Vi\Code\c#\DCCV2\Log4CSL\obj\Debug\Log4CSL.dll
+C:\Vi\Code\c#\DCCV2\Log4CSL\obj\Debug\Log4CSL.pdb

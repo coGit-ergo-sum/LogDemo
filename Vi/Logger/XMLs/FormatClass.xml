@@ -1,0 +1,17 @@
+﻿<Docs>
+  <type name="FormatClass">
+    <summary>
+      <img src="\Logger\Images\Vi.FormatClass.png"  style="margin: 15px 0px 15px 0px;" />
+      <p style="Padding: 15px 0px 0px 0px;">
+        C# doesn't allows optional parameters and params array in the same Method. This class is created to bypass this constraint.
+      </p>      
+    </summary>
+  </type>
+  <method name="Info">
+    <summary>
+      <p style="Padding: 15px 0px 0px 0px;">
+      </p>      
+    </summary>
+  </method>
+</Docs>
+

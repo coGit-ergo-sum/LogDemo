@@ -1,0 +1,19 @@
+﻿<Docs>
+  <type name="Console4Log">
+    <summary>
+      <img src="\Logger\Images\Console.png"  style="margin: 15px 0px 15px 0px;" />
+      <p style="Padding: 15px 0px 0px 0px;">
+        As shown by the picture each method, between Debug; Info; Warn; Error; Fatal, has its own code color.
+      </p>
+    
+    </summary>
+  </type>
+  <method name="Info">
+    <summary>
+      <p style="Padding: 15px 0px 0px 0px;">
+        Use this method to log the messages used to monitor the apllication in production.
+      </p>      
+    </summary>
+  </method>
+</Docs>
+

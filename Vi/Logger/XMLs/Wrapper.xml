@@ -1,0 +1,18 @@
+﻿<Docs>
+  <type name="Wrapper">
+    <summary>
+      <img src="\Logger\Images\Vi.Wrapper.png"  style="margin: 15px 0px 15px 0px;" />
+      <p style="Padding: 15px 0px 0px 0px;"> 
+        This class 'works' for the user control: ist4Log. Its 'duty' is to 'intercept' every log and send the message to the screen.
+      </p>      
+    </summary>
+  </type>
+  <event name="OnAppend">
+    <summary>
+      <p style="Padding: 15px 0px 0px 0px;">
+      
+      </p>      
+    </summary>
+  </event>
+</Docs>
+

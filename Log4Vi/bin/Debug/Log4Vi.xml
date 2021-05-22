@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Log4Vi</name>
+    </assembly>
+    <members>
+        <member name="T:Vi.Log4Vi.Logger">
+            <summary>
+            Wraps a Log4Net object to make it compatible with the Vi.Logger. 
+            </summary>
+            <summary>
+      <img src="/Logger/Images/Logger.png" style="margin: 15px 0px 15px 0px;" />
+      <p style="Padding: 15px 0px 0px 0px;">
+        Vi.Logger is a static class that accepts, with the method 'Vi.Logger.SetLogger' any kind of object that inherits from Vi.ILog.
+        That means that the implementation of the logging process (on file system; event viewer; DB; ...) can be choosen and changed in any moment.<br />
+        Shoud be used to have one "company's standard" to log messages with an "embedded" structure (the standard is up to the user). And should be provided to the Vi.Logger, by the method 'Vi.Logger.SetLogger' (shouldn't be used by the developer).
+      </p>
+    
+    </summary>
+        </member>
+        <member name="F:Vi.Log4Vi.Logger.Log">
+            <summary>
+            The pointer to the Log4Net logger.
+            </summary>
+        </member>
+        <member name="P:Vi.Log4Vi.Logger.Files">
+            <summary>
+            the list of full file names (if any) of the Log4Net object
+            </summary>
+        </member>
+        <member name="M:Vi.Log4Vi.Logger.#ctor(log4net.ILog)">
+            <summary>
+            Use this CTor with if a log4Net objecct is already available. After this CTor the 'Files' field will be 'populated with the list of full file names (if any)
+            </summary>
+            <param name="log">The log4Net objecct</param>
+        </member>
+        <member name="M:Vi.Log4Vi.Logger.#ctor(System.String,System.Boolean)">
+            <summary>
+             Creates 2 loggers, using 'Log4Net'. One with range between 'Debug' to 'Warn' and the other for the range between 'Error' and 'Fatal. The name of the logger is 'DefaultName'.
+            </summary>
+            <param name="logRoot">The path where the log will be saved.</param>
+            <param name="useTraceAppender">True to write also in the EventLog.</param>
+        </member>
+        <member name="M:Vi.Log4Vi.Logger.#ctor(System.String,System.String,System.Boolean)">
+            <summary>
+             Creates 2 loggers, using 'Log4Net'. One with range between 'Debug' to 'Warn' and the other for the range between 'Error' and 'Fatal.
+            </summary>
+            <param name="logRoot">The path where the log will be saved.</param>
+            <param name="name">The name of the logger.</param>
+            <param name="useTraceAppender">True to write also in the EventLog.</param>
+        </member>
+        <member name="M:Vi.Log4Vi.Logger.Debug(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            This is the most verbose logging level (maximum volume setting). Debug should be out-of-bounds for a production system and used only for development and testing.
+            </summary>
+            <param name="text">The text to log.</param>
+            <param name="line">The line from where this method was called.</param>
+            <param name="member">The member from where this method was called.</param>
+            <param name="file">The file from where this method was called.</param>
+        </member>
+        <member name="M:Vi.Log4Vi.Logger.Info(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            The 'Info' level is typically used to output information that is useful to the running and management of your system (production). 'Info' would also be the level used to log Entry and Exit points in key areas of your application. However, you may choose to add more entry and exit points at Debug level for more granularity during development and testing.
+            </summary>
+            <param name="text">The text to log.</param>
+            <param name="line">The line from where this method was called.</param>
+            <param name="member">The member from where this method was called.</param>
+            <param name="file">The file from where this method was called.</param>
+        </member>
+        <member name="M:Vi.Log4Vi.Logger.Warn(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            Warning is often used for handled 'exceptions' or other important log events. For example, if your application requires a configuration setting but has a default in case the setting is missing, then the Warning level should be used to log the missing configuration setting.
+            </summary>
+            <param name="text">The text to log.</param>
+            <param name="line">The line from where this method was called.</param>
+            <param name="member">The member from where this method was called.</param>
+            <param name="file">The file from where this method was called.</param>
+        </member>
+        <member name="M:Vi.Log4Vi.Logger.Error(System.Exception,System.Int32,System.String,System.String)">
+            <summary>
+            Error is used to log all unhandled exceptions. This is typically logged inside a catch block at the boundary of your application.
+            </summary>
+            <param name="se">The exception to log.</param>
+            <param name="line">The line from where this method was called.</param>
+            <param name="member">The member from where this method was called.</param>
+            <param name="file">The file from where this method was called.</param>
+        </member>
+        <member name="M:Vi.Log4Vi.Logger.Fatal(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            Fatal is reserved for special exceptions/conditions where it is imperative that you can quickly pick out these events. Fatal should to be used early in an application's development. It's usually only with experience it is possible identify situations worthy of the FATAL moniker experience do specific events become worth of promotion to Fatal. After all, an error's an error.
+            </summary>
+            <param name="text">The text to log.</param>
+            <param name="line">The line from where this method was called.</param>
+            <param name="member">The member from where this method was called.</param>
+            <param name="file">The file from where this method was called.</param>
+        </member>
+        <member name="M:Vi.Log4Vi.Logger.GetMessage(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            Used by the other methods to create the same output structure: "text = {0}; line = {1}; member = {2}; file = {3};"
+            </summary>
+            <param name="text">The text to log.</param>
+            <param name="line">The line from where this method was called.</param>
+            <param name="member">The member from where this method was called.</param>
+            <param name="file">The file from where this method was called.</param>
+            <returns>the string "text = {0}; line = {1}; member = {2}; file = {3};" filled with the proper values.</returns>
+        </member>
+        <member name="T:Vi.Log4Vi.Tools">
+            <summary>
+            A collection of methods used along this project.
+            </summary>
+            <summary>
+      <img src="\Logger\Images\Vi.Log4Vi.Tools.png" style="margin: 15px 0px 15px 0px;" />
+      <p style="Padding: 9px 0px 7px 0px;">
+        This class provides the standard sets of (static) methods used to log data: Debug; Info; Warn; Error; Fatal enhanced with overloads, String formatting and detailed intellisense description.
+      </p>      
+    </summary>
+        </member>
+        <member name="M:Vi.Log4Vi.Tools.GetFiles">
+            <summary>
+            Loops over all the Appenders and when a 'RollingFileAppender' is found gets from it the full file name (full path and file name)
+            </summary>
+            <returns>A list of all the available full file names.</returns>
+        </member>
+        <member name="M:Vi.Log4Vi.Tools.GetLogger(System.String,System.Boolean)">
+            <summary>
+             Creates 2 VERY BASIC loggers (using 'Log4Net'). One with range between 'Debug' to 'Warn' and the other for the range between 'Error' and 'Fatal. The name of the logger is 'DefaultName'.
+            </summary>
+            <param name="logRoot">The path where the log will be saved.</param>
+            <param name="useTraceAppender">True to write also in the EventLog.</param>
+            <returns>Log4Net object ready to log info on 2 different files.</returns>
+            <!-- No matching elements were found for the following include tag --><include file="XMLs/Tools.xml" path="Docs/method[@name=&quot;GetLogger&quot;]/*" />
+        </member>
+        <member name="M:Vi.Log4Vi.Tools.GetLogger(System.String,System.String,System.Boolean)">
+            <summary>
+            Creates 2 VERY BASIC loggers, using 'Log4Net'. One with range between 'Debug' to 'Warn' and the other for the range between 'Error' and 'Fatal. The name of the logger is 'DefaultName'.
+            </summary>
+            <param name="logRoot">The path where the log will be saved.</param>
+            <param name="name">The name of the logger.</param>
+            <param name="useTraceAppender">True to write also in the EventLog.</param>
+            <returns>Log4Net object ready to log info on 2 different files.</returns>
+        </member>
+        <member name="M:Vi.Log4Vi.Tools.GetFileAppender(System.String,System.String,System.String,log4net.Filter.LevelRangeFilter,System.String)">
+            <summary>
+            Produces a VERY BASIC RollingFileAppender
+            </summary>
+            <param name="name">The name of the rolling file appender the string "FileAppender" will be appended to the name.</param>
+            <param name="file">Assigned to 'fileAppender.File'</param>
+            <param name="type">type could be N for 'Normal' log; E for exception log.</param>
+            <param name="levelRangeFilter">The range for the file appender. will be Debug to Warn for files type N; Error Fatal for files type E.</param>
+            <param name="conversionPattern">The pattern used to log.</param>
+            <returns>A new 'RollingFileAppender' with the provided settings.</returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,18 @@
+﻿<Docs>
+  <type name="FakeLog">
+    <summary>
+      <img src="\Logger\Images\Vi.FakeLog.png"  style="margin: 15px 0px 15px 0px;" />
+      <p style="Padding: 15px 0px 0px 0px;">
+         As soon the method 'SetLogger' will be called this class will be replaced with the provided Logger (if not null)
+         - The aim with this class is to avoid the check: if(this.Log != nul){...} -
+      </p>      
+    </summary>
+  </type>
+  <method name="Info">
+    <summary>
+      <p style="Padding: 15px 0px 0px 0px;">
+      </p>      
+    </summary>
+  </method>
+</Docs>
+

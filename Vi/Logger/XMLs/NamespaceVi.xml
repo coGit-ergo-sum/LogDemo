@@ -1,0 +1,24 @@
+﻿<Docs>
+  <type name="NamespaceDoc">
+    <summary>
+      <p style="Padding: 15px 0px 0px 0px;">
+        The namespace 'Vi' in this solution is an <b>excerpt</b> of the complete 'Vi' Solution: 
+        a collection of simply utilities (like these in this project: Vi.Logger; Vi.List4Log).
+      </p>
+      <p style="Padding: 15px 0px 0px 0px;">
+        The aim is to provide tools to facilitate everyday's tasks and company's standards.
+      </p>
+    </summary>
+  </type>
+
+  <type name="NamespaceViLog4Vi">
+    <summary>
+      <p style="Padding: 15px 0px 0px 0px;">
+        The namespace 'Vi' in this solution is an <b>excerpt</b> of the complete 'Vi' Solution:
+        a collection of utilities (like these: Vi.Logger; Vi.List4Log) with the aim to provide
+        simple tools to facilitate everyday's tasks and company's standards.
+      </p>
+    </summary>
+  </type>  
+
+</Docs>

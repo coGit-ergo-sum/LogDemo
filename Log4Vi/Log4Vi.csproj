@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A517317C-1067-4A97-B850-BD6BA4D4AC12}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Log4Vi</RootNamespace>
+    <AssemblyName>Log4Vi</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Log4Vi.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>.\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Logger.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tools.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Vi\Vi.csproj">
+      <Project>{7fa2b50c-6113-4170-931e-eca9d97ed2b1}</Project>
+      <Name>Vi</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\CSL.dll" />
+    <Content Include="bin\Debug\CSL.pdb" />
+    <Content Include="bin\Debug\CSL.xml" />
+    <Content Include="bin\Debug\Log4CSL.dll" />
+    <Content Include="bin\Debug\Log4CSL.pdb" />
+    <Content Include="bin\Debug\Log4CSL.XML" />
+    <Content Include="bin\Debug\log4net.dll" />
+    <Content Include="bin\Debug\Vi.dll" />
+    <Content Include="bin\Debug\Vi.pdb" />
+    <Content Include="bin\Debug\Vi.xml" />
+    <Content Include="bin\Release\CSL.dll" />
+    <Content Include="bin\Release\CSL.pdb" />
+    <Content Include="bin\Release\Log4CSL.dll" />
+    <Content Include="bin\Release\Log4CSL.pdb" />
+    <Content Include="bin\Release\log4net.dll" />
+    <Content Include="bin\Release\Shared.dll" />
+    <Content Include="bin\Release\Shared.pdb" />
+    <Content Include="bin\Release\Vi.dll" />
+    <Content Include="bin\Release\Vi.pdb" />
+    <Content Include="log4net.dll" />
+    <Content Include="obj\Debug\Log4CSL.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\Log4CSL.dll" />
+    <Content Include="obj\Debug\Log4CSL.pdb" />
+    <Content Include="obj\Debug\Log4Vi.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Release\Log4CSL.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Release\Log4CSL.dll" />
+    <Content Include="obj\Release\Log4CSL.pdb" />
+    <Content Include="obj\Release\Log4Vi.csproj.FileListAbsolute.txt" />
+    <Content Include="XMLs\Tools.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XMLs\Logger.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Diagrams\Tools.cd" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\Log4CSL.csprojResolveAssemblyReference.cache" />
+    <None Include="obj\Debug\Log4Vi.csprojResolveAssemblyReference.cache" />
+    <None Include="obj\Release\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Release\Log4CSL.csprojResolveAssemblyReference.cache" />
+    <None Include="obj\Release\Log4Vi.csprojResolveAssemblyReference.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\" />
+    <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="obj\Release\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,43 @@
+﻿<Docs>
+  
+   <type name="List4Log">
+    <summary>
+      <img src="\Logger\Images\Vi.List4Log.png"  style="margin: 15px 0px 15px 0px;" />
+      <br></br>
+      This is an example of the control created to visualize, on the screen, the logs by the class Vi.Logs, with some messages.
+      <img src="\Logger\Images\List4Log.example.JPG"  style="margin: 15px 0px 15px 0px;" />
+    </summary>
+  </type>
+  
+  <Member name="AppendItem">
+    <summary>
+      <para>
+        <p style="padding:9px 0px 7px 0px;">
+          Each log has its own style depending on 'Level'. The image below shows examples of entries for each  level
+        </p>
+      </para>
+      <img src="\Logger\Images\List4Log.example.JPG"  style="margin: 15px 0px 15px 0px;" />    
+    </summary>
+  </Member>
+  
+  <Member name="AppendItemPublic">
+    <summary>
+      <para>
+        <p style="padding:9px 0px 7px 0px;">
+          This is the <b>public method</b>. It manages the cross thread operation. and then calls the internal overload.
+        </p>
+      </para> 
+    </summary>
+  </Member>
+  
+  <Member name="AppendItemPrivate">
+    <summary>
+      <para>
+        <p style="padding:9px 0px 7px 0px;">
+          This is the <b>private method</b> and implements the adding operation.
+        </p>
+      </para> 
+    </summary>
+  </Member>
+
+</Docs>

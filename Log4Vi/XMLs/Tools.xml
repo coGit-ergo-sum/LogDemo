@@ -1,0 +1,11 @@
+﻿<Docs>
+  <type name="Tools">
+    <summary>
+      <img src="\Logger\Images\Vi.Log4Vi.Tools.png"  style="margin: 15px 0px 15px 0px;" />
+      <p style="Padding: 9px 0px 7px 0px;">
+        This class provides the standard sets of (static) methods used to log data: Debug; Info; Warn; Error; Fatal enhanced with overloads, String formatting and detailed intellisense description.
+      </p>      
+    </summary>
+  </type>
+</Docs>
+
