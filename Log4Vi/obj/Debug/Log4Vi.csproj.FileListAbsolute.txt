@@ -25,3 +25,13 @@ C:\Vi\Code\CSharp\LogDemoBoundle\Log4Vi\bin\Debug\Vi.xml
 C:\Vi\Code\CSharp\LogDemoBoundle\Log4Vi\obj\Debug\Log4Vi.csprojResolveAssemblyReference.cache
 C:\Vi\Code\CSharp\LogDemoBoundle\Log4Vi\obj\Debug\Log4Vi.dll
 C:\Vi\Code\CSharp\LogDemoBoundle\Log4Vi\obj\Debug\Log4Vi.pdb
+C:\Vi\Code\coGit-ergo-sum\LogDemo\Log4Vi\bin\Debug\Log4Vi.xml
+C:\Vi\Code\coGit-ergo-sum\LogDemo\Log4Vi\bin\Debug\Log4Vi.dll
+C:\Vi\Code\coGit-ergo-sum\LogDemo\Log4Vi\bin\Debug\Log4Vi.pdb
+C:\Vi\Code\coGit-ergo-sum\LogDemo\Log4Vi\bin\Debug\Vi.dll
+C:\Vi\Code\coGit-ergo-sum\LogDemo\Log4Vi\bin\Debug\Vi.pdb
+C:\Vi\Code\coGit-ergo-sum\LogDemo\Log4Vi\bin\Debug\Vi.xml
+C:\Vi\Code\coGit-ergo-sum\LogDemo\Log4Vi\obj\Debug\Log4Vi.csprojAssemblyReference.cache
+C:\Vi\Code\coGit-ergo-sum\LogDemo\Log4Vi\obj\Debug\Log4Vi.csproj.CopyComplete
+C:\Vi\Code\coGit-ergo-sum\LogDemo\Log4Vi\obj\Debug\Log4Vi.dll
+C:\Vi\Code\coGit-ergo-sum\LogDemo\Log4Vi\obj\Debug\Log4Vi.pdb

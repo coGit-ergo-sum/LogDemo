@@ -7,3 +7,12 @@ C:\Vi\Code\CSharp\Vi\obj\Debug\Vi.csproj.GenerateResource.Cache
 C:\Vi\Code\CSharp\Vi\obj\Debug\Vi.dll
 C:\Vi\Code\CSharp\Vi\obj\Debug\Vi.pdb
 C:\Vi\Code\CSharp\Vi\obj\Debug\Vi.csprojResolveAssemblyReference.cache
+C:\Vi\Code\coGit-ergo-sum\LogDemo\Vi\obj\Debug\Vi.csprojAssemblyReference.cache
+C:\Vi\Code\coGit-ergo-sum\LogDemo\Vi\obj\Debug\Vi.dll
+C:\Vi\Code\coGit-ergo-sum\LogDemo\Vi\obj\Debug\Vi.pdb
+C:\Vi\Code\coGit-ergo-sum\LogDemo\Vi\bin\Debug\Vi.XML
+C:\Vi\Code\coGit-ergo-sum\LogDemo\Vi\bin\Debug\Vi.dll
+C:\Vi\Code\coGit-ergo-sum\LogDemo\Vi\bin\Debug\Vi.pdb
+C:\Vi\Code\coGit-ergo-sum\LogDemo\Vi\obj\Debug\Vi.List4Log.resources
+C:\Vi\Code\coGit-ergo-sum\LogDemo\Vi\obj\Debug\Vi.Properties.Resources.resources
+C:\Vi\Code\coGit-ergo-sum\LogDemo\Vi\obj\Debug\Vi.csproj.GenerateResource.cache
